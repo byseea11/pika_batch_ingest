@@ -1,0 +1,3 @@
+/home/byseea/code/opensum/pika_batch_ingest/build/CMakeFiles/bingest.dir
+/home/byseea/code/opensum/pika_batch_ingest/build/CMakeFiles/edit_cache.dir
+/home/byseea/code/opensum/pika_batch_ingest/build/CMakeFiles/rebuild_cache.dir

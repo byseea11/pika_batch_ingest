@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.10)
+project(bingest)
+set(CMAKE_BUILD_TYPE Debug)
+
+
+# 设置源文件和头文件
+file(GLOB SOURCES "*.cpp")
+file(GLOB HEADERS "include/*.h")
+
+# 添加可执行文件
+add_executable(cl ${SOURCES} ${HEADERS})
+
+# 包含头文件目录
+include_directories(include)
