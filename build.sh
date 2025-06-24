@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Navigate to the directory containing the CMakeLists.txt file
+# 添加下载.gitmodules的命令
+
+# Navigate to the directory containing the CMakeLists.txt file 将地址改为当前项目地址，不使用绝对地址
 cd /home/byseea/code/opensum/pika_batch_ingest || exit
 
 # Create a build directory if it doesn't exist

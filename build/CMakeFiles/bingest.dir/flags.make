@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/byseea/code/opensum/pika_batch_ingest/include
+CXX_INCLUDES = -I/home/byseea/code/opensum/pika_batch_ingest/build/_deps/nlohmann_json-src/include
 
 CXX_FLAGS = -g -std=gnu++17
 
