@@ -91,16 +91,20 @@ void DataGen::expandKeyPool()
 {
     std::lock_guard<std::mutex> lock(poolMutex_);
 
+    // 等待直到键池大小不小于 keyPoolSize_
+    while (keyPool_.size() < keyPoolSize_) {
+        poolCond_.wait(lock);  // 等待条件变量，释放锁并阻塞当前线程
+    }
+
     size_t initialSize = keyPool_.size();
     for (size_t i = initialSize; i < initialSize + keyPoolSize_; ++i)
     {
         keyPool_.push_back(keyPrefix_ + std::to_string(i));
     }
 
-    poolCond_.notify_all(); // 通知其他线程键池已经扩展
+    poolCond_.notify_all();  // 通知其他线程键池已经扩展
 }
 
-// 初始化键池
 void DataGen::initializeKeyPool()
 {
     keyPool_.clear();
@@ -108,4 +112,6 @@ void DataGen::initializeKeyPool()
     {
         keyPool_.push_back(keyPrefix_ + std::to_string(i));
     }
+
+    poolCond_.notify_all();  // 初始化完成后通知所有等待的线程
 }
