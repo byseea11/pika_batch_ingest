@@ -36,12 +36,10 @@ private:
 
     // 初始化键池
     void initializeKeyPool();
-    void loadConfig(const std::string &configFilePath);
+    Result loadConfig(const std::string &configFilePath);
 
 private:
     FileManager fileManager_;                 // 文件管理器实例
-    std::default_random_engine generator_;    // 随机数生成器
-    std::uniform_int_distribution<int> dist_; // 随机数分布
     std::vector<std::string> keyPool_;        // 键池
     json config_;                             // 配置文件内容
     std::string keyPrefix_;                   // 键前缀
@@ -49,6 +47,8 @@ private:
     size_t keyPoolSize_;                      // 键池大小
     size_t maxFileSizeMB_;                    // 每个文件的最大大小（MB）
     size_t targetSizeGB_;                     // 目标数据大小（GB）
+    size_t maxSizeGB_;                    // 最大数据大小（GB）
+    std::chrono::minutes poolUpdateInterval_;  // 键池更新的时间间隔
 
     std::mutex poolMutex_;             // 键池的互斥锁
     std::condition_variable poolCond_; // 键池扩展的条件变量

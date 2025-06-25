@@ -11,68 +11,86 @@ Log log;
 
 // 构造函数，初始化配置
 DataGen::DataGen(const std::string &configFilePath, const std::string &filePath)
-    : fileManager_(filePath), generator_(std::random_device()()), dist_(0, 999), keyPoolSize_(1000), maxFileSizeMB_(256)
+    : fileManager_(filePath), keyPoolSize_(4000), maxFileSizeMB_(256)
 {
-    loadConfig(configFilePath);
+    if(loadConfig(configFilePath).isError()){
+        LOG_ERROR("Failed to load configuration from " + configFilePath);
+        throw std::runtime_error("Failed to load configuration from " + configFilePath);
+    }
     initializeKeyPool();
 }
 
 // 从配置文件加载配置
-void DataGen::loadConfig(const std::string &configFilePath)
+Result DataGen::loadConfig(const std::string &configFilePath)
 {
     std::ifstream configFile(configFilePath);
     configFile >> config_;
+    targetSizeGB_ = config_["targetSizeGB"];
+    maxSizeGB_ = config_["maxSizeGB"];
+    if(targetSizeGB_ > maxSizeGB_)
+    {
+        LOG_ERROR("Target size cannot be greater than maximum size.");
+        return Result(Result::Ret::kConfigError, "Target size cannot be greater than maximum size.");
+        
+    }
     keyPrefix_ = config_["keyPrefix"];
     valuePrefix_ = config_["valuePrefix"];
     maxFileSizeMB_ = config_["maxFileSizeMB"];
-    targetSizeGB_ = config_["targetSizeGB"];
+    return Result(Result::Ret::kOk, "Configuration loaded successfully.");
 }
 
 // 生成数据的主函数
-void DataGen::generateData()
-{
+void DataGen::generateData() 
+ {
     size_t totalFiles = (targetSizeGB_ * 1024) / maxFileSizeMB_;
     size_t totalDataSize = targetSizeGB_ * 1024 * 1024 * 1024;
+    size_t perFileDataSize = totalDataSize / totalFiles;
+    size_t remainder = totalDataSize % totalFiles;
 
-    // 使用线程池并行生成文件
+    // 初始化键池
+    initializeKeyPool();
+
     std::vector<std::thread> threads;
-    for (size_t i = 0; i < totalFiles; ++i)
-    {
-        std::string filename = "data_" + std::to_string(i + 1) + ".json";
-        threads.push_back(std::thread(&DataGen::generateFile, this, filename, totalDataSize / totalFiles));
+    for (size_t i = 1; i < totalFiles; ++i) {
+        threads.emplace_back(&DataGen::generateFile, this, perFileDataSize);
     }
+     threads.emplace_back(&DataGen::generateFile, this, perFileDataSize+ remainder);
 
-    // 等待所有线程完成
-    for (auto &t : threads)
-    {
+    for (auto& t : threads) {
         t.join();
     }
 
-    std::cout << "Data generation completed!" << std::endl;
+    LOG_INFO("Data generation completed. Total files generated: " + std::to_string(totalFiles) + ", Total data size: " + std::to_string(totalDataSize) + " bytes.");
 }
+
 
 // 生成指定大小的文件
-void DataGen::generateFile(size_t fileSize)
-{
-    // 调用fileManager管理文件生成
-    fileManager_.write(this, fileSize);
-    std::ofstream outputFile(filename);
-    size_t currentFileSize = 0;
+void DataGen::generateFile(size_t fileSize) {
+    std::vector<std::unordered_map<std::string, std::string>> data;
 
-    while (currentFileSize < fileSize)
-    {
-        std::string key = generateKey();
-        std::string value = valuePrefix_ + std::to_string(dist_(generator_));
+    size_t approxEntrySize = 50; // 估算每条键值对大小（字节），可根据实际情况微调
+    size_t numEntries = fileSize / approxEntrySize;
 
-        size_t kvPairSize = key.size() + value.size();
-        outputFile << key << ":" << value << "\n";
+     // 为每个线程创建独立的随机生成器和分布器
+    std::random_device rd;
+    std::mt19937 gen(rd());  // 线程局部随机数生成器
+    std::uniform_int_distribution<int> dist(0, 999);  // 线程局部分布器
 
-        currentFileSize += kvPairSize;
+
+    for (size_t i = 0; i < numEntries; ++i) {
+        std::unordered_map<std::string, std::string> entry;
+        entry["key"] = keyPrefix_ + generateKey();
+        entry["value"] = valuePrefix_ + std::to_string(dist(gen));
+        data.push_back(entry);
     }
 
-    outputFile.close();
-    std::cout << "File " << filename << " generated with size: " << currentFileSize / (1024 * 1024) << " MB." << std::endl;
+    std::sort(data.begin(), data.end(), [](const auto& a, const auto& b) {
+        return a.at("key") < b.at("key");
+    });
+
+    fileManager_.write(data);
 }
+
 
 // 确保键池非空
 void DataGen::ensureKeyPoolNotEmpty()
@@ -118,6 +136,25 @@ void DataGen::initializeKeyPool()
     {
         keyPool_.push_back(keyPrefix_ + std::to_string(i));
     }
-
-    poolCond_.notify_all(); // 初始化完成后通知所有等待的线程
+    LOG_INFO("Key pool initialized with size: " + std::to_string(keyPool_.size()));
 }
+
+ // 更新键池（定时扩展）
+    void rebuildKeyPool() {
+        std::lock_guard<std::mutex> lock(poolMutex_);
+        keyPool_.reserve(numThreads_ * keyPoolSize_);  // 预留空间以提高性能
+        initializeKeyPool();
+        LOG_INFO("Key pool rebuilt with size: " + std::to_string(keyPool_.size()));
+        poolCond_.notify_all();  // 通知所有等待的线程
+    }
+
+
+      // 启动定时任务更新键池
+    void startKeyPoolUpdateTask() {
+        std::thread([this]() {
+            while (true) {
+                std::this_thread::sleep_for(poolUpdateInterval_);
+                rebuildKeyPool();
+            }
+        }).detach();  // 运行在后台线程中
+    }

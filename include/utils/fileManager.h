@@ -11,24 +11,20 @@ class FileManager
 public:
     FileManager() = default;
     // 构造函数，接受文件路径
-    FileManager(const std::string &filePath) : file_(filePath, std::ios::out | std::ios::app), filePath_(filePath), result_(Result(Result::Ret::kOk, filePath))
-    {
-        if (!file_.is_open())
-        {
-            result_.setRes(Result::kFileOpenError, filePath);
-        }
+    FileManager(const std::string& dist) : dist_(dist), distname_index_(0) {}
+    ~FileManager() {}
+
+
+     // 线程安全的生成文件名
+    Result getNextFile() {
+        std::lock_guard<std::mutex> lock(mutex_);
+        std::string filename = dist_ + "/data_" + std::to_string(distname_index_++) + ".json";
+        filePath_ = filename; // 更新当前文件路径
+        return Result(Result::Ret::kFileCreated, filename);
     }
-    // 析构函数，关闭文件
-    ~FileManager()
-    {
-        if (file_.is_open())
-        {
-            file_.close();
-        }
-        filePath_ = "";
-    }
+
     // 写入数据到文件，这里需要先mock，这个函数应该是传入一个mock对象，和需要生成的数据大小，然后处理逻辑
-    Result write(const DataGen *gen, const size_t size);
+    Result write(const DataGen* gen, const size_t size);
 
     // 获取文件大小
     size_t getFileSize()
@@ -47,8 +43,11 @@ public:
     }
 
 private:
-    std::ofstream file_;
-    std::string filePath_; // 文件路径
-    Result result_;        // 用于管理文件操作的状态
+    std::string dist_;      // 用户指定的文件夹路径
+    std::string filePath_;  // 当前文件的路径
+    size_t distname_index_; // 文件名的索引，用于生成唯一的文件名
+    std::string fileExtension_ = ".json"; // 文件扩展名
+    std::mutex mutex_;      // 用于文件名分配的互斥锁
 };
+
 #endif
