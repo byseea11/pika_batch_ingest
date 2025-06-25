@@ -3,8 +3,6 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <chrono>
-#include <iomanip>
 
 class Log
 {
@@ -45,26 +43,21 @@ public:
     // 可以添加将日志保存到文件的功能
     void logToFile(const std::string &fileName) const
     {
-        std::ofstream logFile(fileName, std::ios::app);
+        std::ofstream logFile(fileName, std::ios::app); // 以追加模式打开文件
         if (logFile.is_open())
         {
-            auto now = std::chrono::system_clock::now();
-            auto now_time = std::chrono::system_clock::to_time_t(now);
-            logFile << std::put_time(std::localtime(&now_time), "%Y-%m-%d %H:%M:%S") << " ";
-
             switch (level_)
             {
             case Info:
-                logFile << "[INFO] ";
+                logFile << "[INFO] " << message_ << std::endl;
                 break;
             case Warning:
-                logFile << "[WARNING] ";
+                logFile << "[WARNING] " << message_ << std::endl;
                 break;
             case Error:
-                logFile << "[ERROR] ";
+                logFile << "[ERROR] " << message_ << std::endl;
                 break;
             }
-            logFile << message_ << std::endl;
             logFile.close();
         }
     }
@@ -82,9 +75,6 @@ private:
     log.setLog(Log::LogLevel::Warning, content); \
     log.logMessage();                            \
     log.logToFile("log.txt"); // 输出到控制台并保存到文件
-#define LOG_ERROR(content)                     \
-    log.setLog(Log::LogLevel::Error, content); \
-    log.logMessage();                          \
-    log.logToFile("log.txt"); // 输出到控制台并保存到文件
+#define LOG_ERROR(content) log.setLog(Log::LogLevel::Error, content);
 
 #endif

@@ -52,10 +52,10 @@ void DataGen::generateData()
 }
 
 // 生成指定大小的文件
-void DataGen::generateFile(size_t fileSize)
+void DataGen::generateFile(const std::string &filename, size_t fileSize)
 {
     // 调用fileManager管理文件生成
-    fileManager_.write(this, fileSize);
+    fileManager_.write(this, );
     std::ofstream outputFile(filename);
     size_t currentFileSize = 0;
 

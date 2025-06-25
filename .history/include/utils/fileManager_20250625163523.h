@@ -28,7 +28,7 @@ public:
         filePath_ = "";
     }
     // 写入数据到文件，这里需要先mock，这个函数应该是传入一个mock对象，和需要生成的数据大小，然后处理逻辑
-    Result write(const DataGen *gen, const size_t size);
+    Result write(const DataGen gen, const size_t size);
 
     // 获取文件大小
     size_t getFileSize()

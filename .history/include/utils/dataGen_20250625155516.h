@@ -1,6 +1,5 @@
 #ifndef DATAGEN_H
 #define DATAGEN_H
-#include "fileManager.h"
 #include <iostream>
 #include <fstream>
 #include <unordered_set>
@@ -18,20 +17,19 @@ class DataGen
 {
 public:
     // 构造函数，初始化
-    DataGen(const std::string &configFilePath, const std::string &filePath);
+    DataGen(const std::string &configFilePath);
 
     // 生成数据的主函数
     void generateData();
 
 private:
     // 生成文件的函数
-    void generateFile(size_t fileSize);
+    void generateFile(const std::string &filename, size_t fileSize);
 
     // 随机从键池中选择一个键
     std::string generateKey();
 
     // 动态扩展键池
-    void ensureKeyPoolNotEmpty();
     void expandKeyPool();
 
     // 初始化键池
@@ -39,7 +37,6 @@ private:
     void loadConfig(const std::string &configFilePath);
 
 private:
-    FileManager fileManager_;                 // 文件管理器实例
     std::default_random_engine generator_;    // 随机数生成器
     std::uniform_int_distribution<int> dist_; // 随机数分布
     std::vector<std::string> keyPool_;        // 键池
@@ -52,6 +49,8 @@ private:
 
     std::mutex poolMutex_;             // 键池的互斥锁
     std::condition_variable poolCond_; // 键池扩展的条件变量
+
+    Log log;
 };
 
 #endif

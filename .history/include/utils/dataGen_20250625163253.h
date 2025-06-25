@@ -18,14 +18,14 @@ class DataGen
 {
 public:
     // 构造函数，初始化
-    DataGen(const std::string &configFilePath, const std::string &filePath);
+    DataGen(const std::string &configFilePath);
 
     // 生成数据的主函数
     void generateData();
 
 private:
     // 生成文件的函数
-    void generateFile(size_t fileSize);
+    void generateFile(const std::string &filename, size_t fileSize);
 
     // 随机从键池中选择一个键
     std::string generateKey();

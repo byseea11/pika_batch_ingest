@@ -55,7 +55,7 @@ void DataGen::generateData()
 void DataGen::generateFile(size_t fileSize)
 {
     // 调用fileManager管理文件生成
-    fileManager_.write(this, fileSize);
+    fileManager_.write(*this, fileSize);
     std::ofstream outputFile(filename);
     size_t currentFileSize = 0;
 

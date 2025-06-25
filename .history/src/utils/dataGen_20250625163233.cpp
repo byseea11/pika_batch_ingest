@@ -10,8 +10,8 @@ namespace fs = std::filesystem;
 Log log;
 
 // 构造函数，初始化配置
-DataGen::DataGen(const std::string &configFilePath, const std::string &filePath)
-    : fileManager_(filePath), generator_(std::random_device()()), dist_(0, 999), keyPoolSize_(1000), maxFileSizeMB_(256)
+DataGen::DataGen(const std::string &configFilePath)
+    : generator_(std::random_device()()), dist_(0, 999), keyPoolSize_(1000), maxFileSizeMB_(256)
 {
     loadConfig(configFilePath);
     initializeKeyPool();
@@ -52,10 +52,10 @@ void DataGen::generateData()
 }
 
 // 生成指定大小的文件
-void DataGen::generateFile(size_t fileSize)
+void DataGen::generateFile(const std::string &filename, size_t fileSize)
 {
     // 调用fileManager管理文件生成
-    fileManager_.write(this, fileSize);
+    fileManager_.write(this, );
     std::ofstream outputFile(filename);
     size_t currentFileSize = 0;
 

@@ -3,8 +3,6 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <chrono>
-#include <iomanip>
 
 class Log
 {

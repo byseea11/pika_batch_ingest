@@ -10,8 +10,8 @@ namespace fs = std::filesystem;
 Log log;
 
 // 构造函数，初始化配置
-DataGen::DataGen(const std::string &configFilePath, const std::string &filePath)
-    : fileManager_(filePath), generator_(std::random_device()()), dist_(0, 999), keyPoolSize_(1000), maxFileSizeMB_(256)
+DataGen::DataGen(const std::string &configFilePath)
+    : generator_(std::random_device()()), dist_(0, 999), keyPoolSize_(1000), maxFileSizeMB_(256)
 {
     loadConfig(configFilePath);
     initializeKeyPool();
@@ -52,10 +52,8 @@ void DataGen::generateData()
 }
 
 // 生成指定大小的文件
-void DataGen::generateFile(size_t fileSize)
+void DataGen::generateFile(const std::string &filename, size_t fileSize)
 {
-    // 调用fileManager管理文件生成
-    fileManager_.write(this, fileSize);
     std::ofstream outputFile(filename);
     size_t currentFileSize = 0;
 
@@ -74,20 +72,20 @@ void DataGen::generateFile(size_t fileSize)
     std::cout << "File " << filename << " generated with size: " << currentFileSize / (1024 * 1024) << " MB." << std::endl;
 }
 
-// 确保键池非空
-void DataGen::ensureKeyPoolNotEmpty()
-{
-    std::unique_lock<std::mutex> lock(poolMutex_);
-    if (keyPool_.empty())
-        expandKeyPool();
-}
 // 随机从键池中选择一个键
 std::string DataGen::generateKey()
 {
-    ensureKeyPoolNotEmpty();
+    std::lock_guard<std::mutex> lock(poolMutex_);
+
+    if (keyPool_.empty())
+    {
+        // 键池为空时扩展
+        expandKeyPool();
+    }
+
     // 随机选择一个键
-    LOG_INFO("select dist number is: " + std::to_string(dist_(generator_)) + " , keyPool of size: " + std::to_string(keyPool_.size()));
-    size_t index = dist_(generator_) % keyPool_.size(); // 此处仍需锁
+    log.setLog(Log.LogLevel::info, dist_(generator_));
+    size_t index = dist_(generator_) % keyPool_.size();
     return keyPool_[index];
 }
 
