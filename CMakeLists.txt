@@ -20,6 +20,8 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(nlohmann_json)
 
+
+
 # 添加 GoogleTest/GoogleMock（使用源码编译方式）
 add_subdirectory(third/googletest)
 
@@ -42,6 +44,10 @@ target_link_libraries(test_bingest
     gmock_main
     nlohmann_json::nlohmann_json
 )
+
+# 主目标和测试目标均需定义
+target_compile_definitions(bingest PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}")
+target_compile_definitions(test_bingest PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}")
 
 # 若低版本 GCC，手动链接 stdc++fs
 if(CMAKE_COMPILER_IS_GNUCXX AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS "9")

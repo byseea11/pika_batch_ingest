@@ -1,3 +1,4 @@
 ./build.sh
 cd build
-./bingest
+./bingest 
+

@@ -9,6 +9,12 @@
 #include <unordered_map>
 #include <mutex>
 
+#ifndef PROJECT_DIR
+#error "PROJECT_DIR macro is not defined! Check CMake configuration."
+#else
+#pragma message("PROJECT_DIR value: " PROJECT_DIR)
+#endif
+
 using DataType = std::vector<std::unordered_map<std::string, std::string>>;
 
 // 创建一个模拟的 FileManager 基类，用于测试
@@ -24,8 +30,9 @@ class FileManager : public FileManagerBase
 public:
     FileManager() = default;
     // 构造函数，接受文件路径
-    FileManager(const std::string &dic) : dic_(dic), distname_index_(0)
+    FileManager(const std::string &dic) : distname_index_(0)
     {
+        dic_ = std::filesystem::path(PROJECT_DIR) / dic; // 使用 PROJECT_DIR 和用户指定的目录拼接路径
         // 检查目录是否存在，如果不存在则创建
         if (!std::filesystem::exists(dic_))
         {
