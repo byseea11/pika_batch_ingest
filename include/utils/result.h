@@ -7,12 +7,11 @@ class Result
 public:
     enum Ret
     {
-        kNone = 0,      // 默认状态
-        kOk,            // 成功
-        kFileCreated,   // 文件创建成功
-        kDataGenerated, // 数据成功生成
-        kError,         // 一般错误
-
+        kNone = 0,         // 默认状态
+        kOk,               // 成功
+        kFileCreated,      // 文件创建成功
+        kDataGenerated,    // 数据成功生成
+        kError,            // 一般错误
         kFileOpenError,    // 文件打开错误
         kInvalidSize,      // 无效的文件大小
         kInvalidParam,     // 无效的参数
@@ -36,6 +35,7 @@ public:
     {
         return ret_ != kOk && ret_ != kFileCreated && ret_ != kDataGenerated;
     }
+    std::string message_raw() const { return message_; }
 
     // 返回状态和消息
     std::string message() const
@@ -131,6 +131,8 @@ public:
             message_ = content;
         }
     }
+
+    Ret getRet() const { return ret_; }
 
 private:
     Ret ret_ = kNone;

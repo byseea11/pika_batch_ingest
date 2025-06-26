@@ -34,26 +34,31 @@ public:
     // 生成数据的主函数
     void generateData();
 
-private:
+    // private:
     // 生成文件的函数
-    void generateFile(size_t fileSize);
+    Result generateFile(size_t fileSize);
 
     // 随机从键池中选择一个键
-    std::string generateKey();
+    Result generateKey();
 
     // 动态扩展键池
-    void ensureKeyPoolNotEmpty();
-    void expandKeyPool();
+    Result ensureKeyPoolNotEmpty();
+    Result expandKeyPool();
 
     // 初始化键池
-    void initializeKeyPool();
+    Result initializeKeyPool();
     Result loadConfig(const std::string &configFilePath);
 
-    void rebuildKeyPool();
-    void startKeyPoolUpdateTask();
+    Result rebuildKeyPool();
+    Result startKeyPoolUpdateTask();
+
+    // 获取当前键池用于测试
+    std::vector<std::string> &getKeyPool();
+    void setFileManager(const std::shared_ptr<FileManagerBase> &fileManager) { fileManager_ = std::move(fileManager); }
 
 private:
-    FileManager fileManager_;                                                   // 文件管理器实例
+    std::shared_ptr<FileManagerBase> fileManager_;
+    // 文件管理器实例
     std::vector<std::string> keyPool_;                                          // 键池
     json config_;                                                               // 配置文件内容
     std::string keyPrefix_;                                                     // 键前缀
@@ -69,6 +74,7 @@ private:
     std::thread updateThread_; // 后台线程用于定期更新键池
 
     std::shared_mutex poolMutex_; // 键池的互斥锁
+    friend class DataGenTest;     // 允许测试类访问私有成员
 };
 
 #endif

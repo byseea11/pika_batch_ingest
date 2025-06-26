@@ -1,0 +1,142 @@
+#include <gtest/gtest.h>
+#include "utils/dataGen.h"
+#include <fstream>
+#include <filesystem>
+#include "gmock/gmock.h"
+#include "utils/fileManager.h"
+
+// 创建一个 MockFileManager 类，继承自 FileManagerBase
+class MockFileManager : public FileManagerBase
+{
+public:
+    MOCK_METHOD(Result, write, (const DataType &data), (override));
+};
+
+class DataGenTest : public ::testing::Test
+{
+protected:
+    std::unique_ptr<DataGen> gen;
+    std::shared_ptr<MockFileManager> mockFileManager = std::make_shared<MockFileManager>();
+    const std::string configPath = "test_config.json";
+    const std::string outputDir = "test_output";
+
+    void SetUp() override
+    {
+        // 创建测试配置文件
+        std::ofstream config(configPath);
+        config << R"({
+            "targetSizeGB": 1,
+            "maxSizeGB": 2,
+            "keyPrefix": "key_",
+            "valuePrefix": "val_",
+            "maxFileSizeMB": 256,
+            "approxEntrySizeKB": 50
+        })";
+        config.close();
+        gen = std::make_unique<DataGen>(configPath, outputDir);
+        // 确保输出目录存在
+        std::filesystem::create_directories(outputDir);
+    }
+
+    void TearDown() override
+    {
+        std::filesystem::remove(configPath);
+        std::filesystem::remove_all(outputDir);
+    }
+};
+
+TEST_F(DataGenTest, GenerateKeyShouldReturnNonEmptyKey)
+{
+    Result key = gen->generateKey();
+    EXPECT_FALSE(key.message_raw().empty());
+}
+
+TEST_F(DataGenTest, GenerateKeyShouldBeInKeyPool)
+{
+    Result key = gen->generateKey();
+    const auto &pool = gen->getKeyPool(); // 你需要提供这个 getter 方法
+    EXPECT_TRUE(std::find(pool.begin(), pool.end(), key.message_raw()) != pool.end());
+}
+
+TEST_F(DataGenTest, GenerateKeyShouldHandleEmptyPool)
+{
+    gen->getKeyPool().clear();
+    EXPECT_THROW({ gen->generateKey(); }, std::runtime_error);
+}
+
+/**
+ * 正常情况下生成文件
+ * fileSize == 0 时行为
+ * approxEntrySizeKB_ 设置不合理（如0）
+ * 键池为空
+ * 写入操作失败时（mock fileManager_）
+ * 写入后的文件是否排序
+ */
+
+TEST_F(DataGenTest, GenerateFileShouldGenerateCorrectNumberOfEntriesAndSorted)
+{
+    gen = std::make_unique<DataGen>(configPath, outputDir);
+    gen->setFileManager(mockFileManager);
+    EXPECT_CALL(*mockFileManager, write(testing::_))
+        .WillOnce([](const DataType &data)
+                  {
+            EXPECT_FALSE(data.empty());
+            for (size_t i = 1; i < data.size(); ++i) {
+                EXPECT_LE(data[i - 1].at("key"), data[i].at("key"));
+            }
+            return Result(Result::Ret::kOk, "File generated successfully."); });
+
+    gen->generateFile(100);
+}
+
+TEST_F(DataGenTest, GenerateFileShouldHandleZeroFileSize)
+{
+    gen = std::make_unique<DataGen>(configPath, outputDir);
+    gen->setFileManager(mockFileManager);
+    EXPECT_CALL(*mockFileManager, write(testing::_)).Times(0);
+    gen->generateFile(0);
+}
+
+TEST_F(DataGenTest, GenerateFileShouldNotCrashIfEntrySizeIsZero)
+{
+    std::string configPath = "test_zeroapp_config.json";
+    std::ofstream config(configPath);
+    config << R"({
+        "targetSizeGB": 1,
+        "maxSizeGB": 2,
+        "keyPrefix": "key_",
+        "valuePrefix": "val_",
+        "maxFileSizeMB": 1,
+        "approxEntrySizeKB": 0
+    })";
+    config.close();
+    EXPECT_THROW({
+        gen = std::make_unique<DataGen>(configPath, outputDir);
+        gen->setFileManager(mockFileManager);
+        gen->generateFile(100); }, std::runtime_error);
+    EXPECT_CALL(*mockFileManager, write(testing::_)).Times(0);
+    std::filesystem::remove("test_zeroapp_config.json");
+}
+
+TEST_F(DataGenTest, GenerateFileShouldHandleEmptyKeyPool)
+{
+    gen = std::make_unique<DataGen>(configPath, outputDir);
+    gen->setFileManager(mockFileManager);
+
+    gen->getKeyPool().clear();
+    EXPECT_CALL(*mockFileManager, write(testing::_))
+        .WillOnce(testing::Return(Result(Result::Ret::kOk, "File generated successfully.")));
+    EXPECT_EQ(gen->generateFile(100).getRet(), Result::Ret::kOk);
+}
+
+TEST_F(DataGenTest, GenerateFileShouldHandleWriteFailure)
+{
+    gen = std::make_unique<DataGen>(configPath, "output");
+    gen->setFileManager(mockFileManager);
+    // 确保生成至少一个 entry，否则不会触发 write 调用
+    EXPECT_CALL(*mockFileManager, write(testing::_))
+        .WillOnce(testing::Return(Result(Result::Ret::kFileOpenError, "output/data_1.json")));
+
+    Result res = gen->generateFile(100); // 改为更大的值以确保写入
+    EXPECT_EQ(res.getRet(), Result::Ret::kFileWriteError);
+}

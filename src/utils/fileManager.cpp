@@ -4,7 +4,7 @@
 
 using json = nlohmann::json;
 
-Result FileManager::write(const std::vector<std::unordered_map<std::string, std::string>> &data)
+Result FileManager::write(const DataType &data)
 {
     getFileName();
 

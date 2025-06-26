@@ -14,7 +14,7 @@
 namespace fs = std::filesystem;
 // 构造函数，初始化配置
 DataGen::DataGen(const std::string &configFilePath, const std::string &dicPath)
-    : fileManager_(dicPath), keyPoolSize_(4000), maxFileSizeMB_(256)
+    : fileManager_(std::make_shared<FileManager>(dicPath)), keyPoolSize_(4000), maxFileSizeMB_(256)
 {
     if (loadConfig(configFilePath).isError())
     {
@@ -40,6 +40,11 @@ Result DataGen::loadConfig(const std::string &configFilePath)
     valuePrefix_ = config_["valuePrefix"];
     maxFileSizeMB_ = config_["maxFileSizeMB"];
     approxEntrySizeKB_ = config_["approxEntrySizeKB"];
+    if (maxFileSizeMB_ == 0 || approxEntrySizeKB_ == 0)
+    {
+        LOG_ERROR("Max file size and approx entry size must be greater than zero.");
+        return Result(Result::Ret::kConfigError, "Max file size and approx entry size must be greater than zero.");
+    }
 
     return Result(Result::Ret::kOk, "Configuration loaded successfully.");
 }
@@ -53,13 +58,21 @@ void DataGen::generateData()
 {
     size_t totalFiles = (targetSizeGB_ * 1024) / maxFileSizeMB_;
     size_t totalDataSize = targetSizeGB_ * 1024 * 1024 * 1024;
-    size_t perFileDataSize = totalDataSize / totalFiles;
+    size_t perFileDataSize = maxFileSizeMB_;
     size_t remainder = totalDataSize % totalFiles;
 
     // 初始化键池
-    initializeKeyPool();
+    if (initializeKeyPool().isError())
+    {
+        LOG_ERROR("Failed to initialize key pool.");
+        throw std::runtime_error("Failed to initialize key pool.");
+    }
 
-    startKeyPoolUpdateTask();
+    if (startKeyPoolUpdateTask().isError())
+    {
+        LOG_ERROR("Failed to start key pool update task.");
+        throw std::runtime_error("Failed to start key pool update task.");
+    }
 
     // 创建线程池
     ThreadPool pool(numThreads_);
@@ -81,9 +94,10 @@ void DataGen::generateData()
 }
 
 // 生成指定大小的文件
-void DataGen::generateFile(size_t fileSize)
+Result DataGen::generateFile(size_t fileSize)
 {
-    std::vector<std::unordered_map<std::string, std::string>> data;
+    DataType data;
+    Result res;
 
     size_t numEntries = fileSize / approxEntrySizeKB_; // 计算每个文件需要多少条数据
 
@@ -95,33 +109,56 @@ void DataGen::generateFile(size_t fileSize)
     for (size_t i = 0; i < numEntries; ++i)
     {
         std::unordered_map<std::string, std::string> entry;
-        entry["key"] = keyPrefix_ + generateKey();
-        entry["value"] = valuePrefix_ + std::to_string(dist(gen));
-        data.push_back(entry);
+        try
+        {
+            entry["key"] = generateKey().message_raw();
+            entry["value"] = valuePrefix_ + std::to_string(dist(gen));
+            data.push_back(entry);
+        }
+        catch (const std::exception &e)
+        {
+            LOG_ERROR("Failed to generate key: " + std::string(e.what()));
+            initializeKeyPool(); // 如果发生异常，重新初始化键池
+            --i;                 // 重试当前条目
+        }
+        LOG_INFO("Generated entry " + std::to_string(i) + ": " +
+                 entry["key"] + " -> " + entry["value"]);
     }
 
     std::sort(data.begin(), data.end(), [](const auto &a, const auto &b)
               { return a.at("key") < b.at("key"); });
 
-    fileManager_.write(data);
+    if (data.empty())
+    {
+        LOG_WARN("No data generated for file, skipping write.");
+        return Result(Result::Ret::kOk, "No data generated for file.");
+    }
+    res = fileManager_->write(data);
+    if (res.isError())
+    {
+        LOG_ERROR(res.message());
+        return Result(Result::Ret::kFileWriteError, res.message());
+    }
+    return Result(Result::Ret::kOk, "File generated successfully.");
 }
 
 // 随机从键池中选择一个键
-std::string DataGen::generateKey()
+Result DataGen::generateKey()
 {
     std::shared_lock<std::shared_mutex> lock(poolMutex_);
     if (keyPool_.empty())
     {
         LOG_ERROR("Key pool is unexpectedly empty");
-        return "invalid_key";
+        throw std::runtime_error("Key pool is unexpectedly empty");
     }
 
     std::mt19937 gen(std::random_device{}());
     std::uniform_int_distribution<size_t> dist(0, keyPool_.size() - 1);
-    return keyPool_[dist(gen)];
+    LOG_INFO("Generating key: " + keyPool_[dist(gen)]);
+    return Result(Result::Ret::kOk, keyPool_[dist(gen)]);
 }
 
-void DataGen::initializeKeyPool()
+Result DataGen::initializeKeyPool()
 {
     std::unique_lock<std::shared_mutex> lock(poolMutex_);
     keyPool_.clear();
@@ -130,9 +167,10 @@ void DataGen::initializeKeyPool()
         keyPool_.push_back(keyPrefix_ + std::to_string(i));
     }
     LOG_INFO("Key pool initialized with size: " + std::to_string(keyPool_.size()));
+    return Result(Result::Ret::kOk, "Key pool initialized successfully.");
 }
 
-void DataGen::rebuildKeyPool()
+Result DataGen::rebuildKeyPool()
 {
     std::unique_lock<std::shared_mutex> lock(poolMutex_);
     keyPool_.clear();
@@ -141,9 +179,10 @@ void DataGen::rebuildKeyPool()
         keyPool_.push_back(keyPrefix_ + std::to_string(i));
     }
     LOG_INFO("Key pool rebuilt with size: " + std::to_string(keyPool_.size()));
+    return Result(Result::Ret::kOk, "Key pool rebuilt successfully.");
 }
 
-void DataGen::startKeyPoolUpdateTask()
+Result DataGen::startKeyPoolUpdateTask()
 {
     updateThread_ = std::thread([this]()
                                 {
@@ -151,4 +190,11 @@ void DataGen::startKeyPoolUpdateTask()
             std::this_thread::sleep_for(poolUpdateInterval_);
             rebuildKeyPool();
         } });
+    return Result(Result::Ret::kOk, "Key pool update task started successfully.");
+}
+
+std::vector<std::string> &DataGen::getKeyPool()
+{
+    std::shared_lock<std::shared_mutex> lock(poolMutex_);
+    return keyPool_;
 }

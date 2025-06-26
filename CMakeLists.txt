@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 包含头文件目录
-include_directories(include test third/ThreadPool)
+include_directories(${CMAKE_SOURCE_DIR}/include test third/ThreadPool)
 
-# 包含 FetchContent 来下载依赖
+# 引入 FetchContent 来下载 JSON 库
 include(FetchContent)
 
 # 下载 nlohmann/json 库
@@ -20,29 +20,34 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(nlohmann_json)
 
-# 添加 GoogleTest
+# 添加 GoogleTest/GoogleMock（使用源码编译方式）
 add_subdirectory(third/googletest)
 
-# 设置源文件
-file(GLOB_RECURSE SOURCES "src/*.cpp")
+# 查找源文件
+file(GLOB_RECURSE ALL_SOURCES "src/*.cpp")
 file(GLOB_RECURSE TEST_SOURCES "test/*.cpp")
 
-# 设置头文件目录
-include_directories(${CMAKE_SOURCE_DIR}/include)
+# 用于测试目标的源文件（排除 mock.cpp）
+set(TESTABLE_SOURCES ${ALL_SOURCES})
+list(FILTER TESTABLE_SOURCES EXCLUDE REGEX ".*/mock.cpp$")
 
-# 添加主程序
-add_executable(bingest ${SOURCES})
+# 构建主程序：包含 mock.cpp
+add_executable(bingest ${ALL_SOURCES})
 target_link_libraries(bingest PRIVATE nlohmann_json::nlohmann_json)
 
-# 如果是低版本 GCC，可能需要链接 stdc++fs（C++17 中 filesystem 相关）
+# 构建测试程序：排除 mock.cpp
+add_executable(test_bingest ${TEST_SOURCES} ${TESTABLE_SOURCES})
+target_link_libraries(test_bingest
+    PRIVATE
+    gmock_main
+    nlohmann_json::nlohmann_json
+)
+
+# 若低版本 GCC，手动链接 stdc++fs
 if(CMAKE_COMPILER_IS_GNUCXX AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS "9")
     target_link_libraries(bingest PRIVATE stdc++fs)
 endif()
 
-# 添加测试程序
-add_executable(test_bingest ${TEST_SOURCES})
-target_link_libraries(test_bingest PRIVATE gtest gtest_main)
-
-# 启用测试功能
+# 启用测试支持
 enable_testing()
 add_test(NAME test_bingest COMMAND test_bingest)
