@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/byseea/code/opensum/pika_batch_ingest/build/third/googletest/cmake_install.cmake")
   include("/home/byseea/code/opensum/pika_batch_ingest/build/_deps/nlohmann_json-build/cmake_install.cmake")
+  include("/home/byseea/code/opensum/pika_batch_ingest/build/third/googletest/cmake_install.cmake")
 
 endif()
 

@@ -69,6 +69,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/nlohmann_json-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/nlohmann_json-build/nlohmann_json.pc"
+  "_deps/nlohmann_json-build/nlohmann_jsonConfigVersion.cmake"
+  "_deps/nlohmann_json-build/nlohmann_jsonConfig.cmake"
+  "_deps/nlohmann_json-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   "third/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "third/googletest/googletest/generated/gmock.pc"
   "third/googletest/googletest/generated/gmock_main.pc"
@@ -78,10 +82,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "third/googletest/googletest/generated/gtest.pc"
   "third/googletest/googletest/generated/gtest_main.pc"
   "third/googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "_deps/nlohmann_json-build/nlohmann_json.pc"
-  "_deps/nlohmann_json-build/nlohmann_jsonConfigVersion.cmake"
-  "_deps/nlohmann_json-build/nlohmann_jsonConfig.cmake"
-  "_deps/nlohmann_json-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

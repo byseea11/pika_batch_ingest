@@ -273,6 +273,54 @@ src/mock.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bingest.dir/build.make CMakeFiles/bingest.dir/src/mock.cpp.s
 .PHONY : src/mock.cpp.s
 
+src/utils/dataGen.o: src/utils/dataGen.cpp.o
+.PHONY : src/utils/dataGen.o
+
+# target to build an object file
+src/utils/dataGen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bingest.dir/build.make CMakeFiles/bingest.dir/src/utils/dataGen.cpp.o
+.PHONY : src/utils/dataGen.cpp.o
+
+src/utils/dataGen.i: src/utils/dataGen.cpp.i
+.PHONY : src/utils/dataGen.i
+
+# target to preprocess a source file
+src/utils/dataGen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bingest.dir/build.make CMakeFiles/bingest.dir/src/utils/dataGen.cpp.i
+.PHONY : src/utils/dataGen.cpp.i
+
+src/utils/dataGen.s: src/utils/dataGen.cpp.s
+.PHONY : src/utils/dataGen.s
+
+# target to generate assembly for a file
+src/utils/dataGen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bingest.dir/build.make CMakeFiles/bingest.dir/src/utils/dataGen.cpp.s
+.PHONY : src/utils/dataGen.cpp.s
+
+src/utils/fileManager.o: src/utils/fileManager.cpp.o
+.PHONY : src/utils/fileManager.o
+
+# target to build an object file
+src/utils/fileManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bingest.dir/build.make CMakeFiles/bingest.dir/src/utils/fileManager.cpp.o
+.PHONY : src/utils/fileManager.cpp.o
+
+src/utils/fileManager.i: src/utils/fileManager.cpp.i
+.PHONY : src/utils/fileManager.i
+
+# target to preprocess a source file
+src/utils/fileManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bingest.dir/build.make CMakeFiles/bingest.dir/src/utils/fileManager.cpp.i
+.PHONY : src/utils/fileManager.cpp.i
+
+src/utils/fileManager.s: src/utils/fileManager.cpp.s
+.PHONY : src/utils/fileManager.s
+
+# target to generate assembly for a file
+src/utils/fileManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bingest.dir/build.make CMakeFiles/bingest.dir/src/utils/fileManager.cpp.s
+.PHONY : src/utils/fileManager.cpp.s
+
 test/main.o: test/main.cpp.o
 .PHONY : test/main.o
 
@@ -319,6 +367,12 @@ help:
 	@echo "... src/mock.o"
 	@echo "... src/mock.i"
 	@echo "... src/mock.s"
+	@echo "... src/utils/dataGen.o"
+	@echo "... src/utils/dataGen.i"
+	@echo "... src/utils/dataGen.s"
+	@echo "... src/utils/fileManager.o"
+	@echo "... src/utils/fileManager.i"
+	@echo "... src/utils/fileManager.s"
 	@echo "... test/main.o"
 	@echo "... test/main.i"
 	@echo "... test/main.s"

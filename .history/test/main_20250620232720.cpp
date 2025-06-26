@@ -1,0 +1,8 @@
+#include <gtest/gtest.h>
+#include "randomSuffix.h"
+
+int main(int argc, char **argv)
+{
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS(); // 运行所有的测试
+}

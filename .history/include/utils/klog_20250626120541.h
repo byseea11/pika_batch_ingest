@@ -1,33 +1,30 @@
-#ifndef LOG_H
-#define LOG_H
-#include <string>
+#ifndef KLOG_H
+#define KLOG_H
+#include <mutex>
 #include <iostream>
-#include <fstream>
-#include <chrono>
-#include <iomanip>
 
-class Log
+class KLog
 {
 public:
-    enum LogLevel
+    enum KLogLevel
     {
         Info = 0,
         Warning,
         Error
     };
 
-    Log() = default;
+    KLog() = default;
 
-    // 设置日志级别和内容
-    void setLog(LogLevel level, const std::string &msg)
+    void setKLog(KLogLevel level, const std::string &msg)
     {
+        std::lock_guard<std::mutex> lock(mutex_); // 加锁保护日志内容
         level_ = level;
         message_ = msg;
     }
 
-    // 输出日志（根据日志级别不同输出格式不同）
-    void logMessage() const
+    void KLogMessage() const
     {
+        std::lock_guard<std::mutex> lock(mutex_); // 保证控制台输出线程安全
         switch (level_)
         {
         case Info:
@@ -42,9 +39,9 @@ public:
         }
     }
 
-    // 可以添加将日志保存到文件的功能
-    void logToFile(const std::string &fileName) const
+    void LogToFile(const std::string &fileName) const
     {
+        std::lock_guard<std::mutex> lock(mutex_); // 保证文件输出线程安全
         std::ofstream logFile(fileName, std::ios::app);
         if (logFile.is_open())
         {
@@ -70,21 +67,18 @@ public:
     }
 
 private:
-    LogLevel level_ = Info;
+    mutable std::mutex mutex_; // 互斥锁保护并发访问
+    KLogLevel level_ = Info;
     std::string message_;
 };
 
-#define LOG_INFO(content)                     \
-    log.setLog(Log::LogLevel::Info, content); \
-    log.logMessage();                         \
-    log.logToFile("log.txt"); // 输出到控制台并保存到文件
-#define LOG_WARN(content)                        \
-    log.setLog(Log::LogLevel::Warning, content); \
-    log.logMessage();                            \
-    log.logToFile("log.txt"); // 输出到控制台并保存到文件
-#define LOG_ERROR(content)                     \
-    log.setLog(Log::LogLevel::Error, content); \
-    log.logMessage();                          \
-    log.logToFile("log.txt"); // 输出到控制台并保存到文件
+#define KLog(level, content)                       \
+    KLog.setKLog(KLog::KLogLevel::level, content); \
+    KLog.KLogMessage();                            \
+    KLog.KLogToFile("KLog.txt")
 
-#endif
+#define Log_INFO(content) KLog(Info, content)
+#define Log_WARN(content) KLog(Warning, content)
+#define Log_ERROR(content) KLog(Error, content)
+
+#endif // KLOG_H

@@ -1,0 +1,8 @@
+{
+    "keyPrefix": "key_",
+    "valuePrefix": "value_",
+    "maxFileSizeMB": 256,
+    "maxSizeGB": 100,
+    "targetSizeGB": 10,
+    "approxEntrySize": 50
+}

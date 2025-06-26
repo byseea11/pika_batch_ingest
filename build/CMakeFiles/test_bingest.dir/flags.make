@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/byseea/code/opensum/pika_batch_ingest/third/googletest/googletest/include -isystem /home/byseea/code/opensum/pika_batch_ingest/third/googletest/googletest
+CXX_INCLUDES = -I/home/byseea/code/opensum/pika_batch_ingest/include -I/home/byseea/code/opensum/pika_batch_ingest/test -I/home/byseea/code/opensum/pika_batch_ingest/third/ThreadPool -isystem /home/byseea/code/opensum/pika_batch_ingest/third/googletest/googletest/include -isystem /home/byseea/code/opensum/pika_batch_ingest/third/googletest/googletest
 
 CXX_FLAGS = -g -std=gnu++17
 

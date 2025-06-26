@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/byseea/code/opensum/pika_batch_ingest/third/googletest/googletest/include -I/home/byseea/code/opensum/pika_batch_ingest/third/googletest/googletest
+CXX_INCLUDES = -I/home/byseea/code/opensum/pika_batch_ingest/include -I/home/byseea/code/opensum/pika_batch_ingest/test -I/home/byseea/code/opensum/pika_batch_ingest/third/ThreadPool -I/home/byseea/code/opensum/pika_batch_ingest/third/googletest/googletest/include -I/home/byseea/code/opensum/pika_batch_ingest/third/googletest/googletest
 
 CXX_FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
 
