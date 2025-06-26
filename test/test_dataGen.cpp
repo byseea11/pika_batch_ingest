@@ -44,6 +44,11 @@ protected:
         std::filesystem::remove_all(outputDir);
     }
 };
+/**
+ * 测试生成键的功能
+ * 测试键在池中是否存在
+ * 测试键池为空时的行为
+ */
 
 TEST_F(DataGenTest, GenerateKeyShouldReturnNonEmptyKey)
 {
@@ -54,7 +59,7 @@ TEST_F(DataGenTest, GenerateKeyShouldReturnNonEmptyKey)
 TEST_F(DataGenTest, GenerateKeyShouldBeInKeyPool)
 {
     Result key = gen->generateKey();
-    const auto &pool = gen->getKeyPool(); // 你需要提供这个 getter 方法
+    const auto &pool = gen->getKeyPool();
     EXPECT_TRUE(std::find(pool.begin(), pool.end(), key.message_raw()) != pool.end());
 }
 
@@ -139,4 +144,34 @@ TEST_F(DataGenTest, GenerateFileShouldHandleWriteFailure)
 
     Result res = gen->generateFile(100); // 改为更大的值以确保写入
     EXPECT_EQ(res.getRet(), Result::Ret::kFileWriteError);
+}
+
+/**
+ * 测试分割文件
+ */
+TEST_F(DataGenTest, GenerateDataSplitFiles)
+{
+    std::string configPath = "test_split_config.json";
+    std::ofstream config(configPath);
+    config << R"({
+        "targetSizeGB": 0.001,
+        "maxSizeGB": 2,
+        "keyPrefix": "key_",
+        "valuePrefix": "val_",
+        "maxFileSizeMB": 0.1,
+        "approxEntrySizeKB": 50
+    })";
+    config.close();
+    if (!std::filesystem::exists(outputDir))
+    {
+        std::filesystem::create_directories(outputDir);
+    }
+    gen = std::make_unique<DataGen>(configPath, outputDir);
+    gen->setFileManager(mockFileManager);
+    EXPECT_CALL(*mockFileManager, write(testing::_)).WillRepeatedly([](const DataType &data)
+                                                                    {
+                      EXPECT_FALSE(data.empty());
+                      return Result(Result::Ret::kOk, "File generated successfully."); });
+    EXPECT_EQ(gen->generateData().getRet(), Result::Ret::kOk);
+    std::filesystem::remove("test_split_config.json");
 }

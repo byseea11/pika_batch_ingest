@@ -32,7 +32,7 @@ public:
     }
 
     // 生成数据的主函数
-    void generateData();
+    Result generateData();
 
     // private:
     // 生成文件的函数
@@ -64,10 +64,10 @@ private:
     std::string keyPrefix_;                                                     // 键前缀
     std::string valuePrefix_;                                                   // 值前缀
     size_t keyPoolSize_;                                                        // 键池大小
-    size_t maxFileSizeMB_;                                                      // 每个文件的最大大小（MB）
-    size_t targetSizeGB_;                                                       // 目标数据大小（GB）
-    size_t maxSizeGB_;                                                          // 最大数据大小（GB）
-    size_t approxEntrySizeKB_;                                                  // 每个条目的平均大小（KB）
+    double maxFileSizeMB_;                                                      // 每个文件的最大大小（MB）
+    double targetSizeGB_;                                                       // 目标数据大小（GB）
+    double maxSizeGB_;                                                          // 最大数据大小（GB）
+    double approxEntrySizeKB_;                                                  // 每个条目的平均大小（KB）
     std::chrono::minutes poolUpdateInterval_;                                   // 键池更新的时间间隔
     size_t numThreads_ = std::max(1u, std::thread::hardware_concurrency() - 1); // 线程数，至少1个线程
     std::atomic<bool> stopUpdateThread_{false};

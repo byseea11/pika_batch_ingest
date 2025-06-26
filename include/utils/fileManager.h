@@ -4,6 +4,7 @@
 #include <string>
 #include <filesystem>
 #include "utils/result.h"
+#include "utils/klog.h"
 #include <vector>
 #include <unordered_map>
 #include <mutex>
@@ -38,6 +39,7 @@ public:
     {
         std::lock_guard<std::mutex> lock(mutex_);
         filePath_ = dic_ + "/data_" + std::to_string(distname_index_++) + ".json"; // 更新当前文件路径
+        LOG_INFO("FileManager Creating file: " + filePath_);
         return Result(Result::Ret::kFileCreated, filePath_);
     }
 

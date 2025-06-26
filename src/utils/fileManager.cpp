@@ -7,6 +7,7 @@ using json = nlohmann::json;
 Result FileManager::write(const DataType &data)
 {
     getFileName();
+    LOG_INFO("Writing data to file: " + filePath_);
 
     std::ofstream file(filePath_);
     if (!file.is_open())

@@ -12,6 +12,14 @@
 #include "utils/fileManager.h"
 
 namespace fs = std::filesystem;
+
+std::string thread_id_to_string(std::thread::id id)
+{
+    std::ostringstream oss;
+    oss << id; // 使用重载的 << 运算符
+    return oss.str();
+}
+
 // 构造函数，初始化配置
 DataGen::DataGen(const std::string &configFilePath, const std::string &dicPath)
     : fileManager_(std::make_shared<FileManager>(dicPath)), keyPoolSize_(4000), maxFileSizeMB_(256)
@@ -40,7 +48,7 @@ Result DataGen::loadConfig(const std::string &configFilePath)
     valuePrefix_ = config_["valuePrefix"];
     maxFileSizeMB_ = config_["maxFileSizeMB"];
     approxEntrySizeKB_ = config_["approxEntrySizeKB"];
-    if (maxFileSizeMB_ == 0 || approxEntrySizeKB_ == 0)
+    if (maxFileSizeMB_ <= 0 || approxEntrySizeKB_ <= 0)
     {
         LOG_ERROR("Max file size and approx entry size must be greater than zero.");
         return Result(Result::Ret::kConfigError, "Max file size and approx entry size must be greater than zero.");
@@ -54,12 +62,17 @@ Result DataGen::loadConfig(const std::string &configFilePath)
  * 1. 分割需要多少个文件，然后多线程处理每个文件
  * 2. 每个文件中的逻辑就是使用vector插入数据，最后sort，然后调用file.write写入文件
  */
-void DataGen::generateData()
+Result DataGen::generateData()
 {
-    size_t totalFiles = (targetSizeGB_ * 1024) / maxFileSizeMB_;
-    size_t totalDataSize = targetSizeGB_ * 1024 * 1024 * 1024;
-    size_t perFileDataSize = maxFileSizeMB_;
-    size_t remainder = totalDataSize % totalFiles;
+    // 使用浮点数，添加范围检查
+    double totalDataSize = targetSizeGB_ * 1024;
+    double totalFiles = (maxFileSizeMB_ > 0) ? totalDataSize / maxFileSizeMB_ : 0.0;
+    double remainder = (maxFileSizeMB_ > 0) ? std::fmod(totalDataSize, maxFileSizeMB_) : 0.0;
+    double perFileDataSize = maxFileSizeMB_; // 每个文件的大小（KB）
+
+    LOG_INFO("Total data size: " + std::to_string(totalDataSize) +
+             " MB, Total files to generate: " + std::to_string(totalFiles) +
+             ", Remainder: " + std::to_string(remainder) + " MB.");
 
     // 初始化键池
     if (initializeKeyPool().isError())
@@ -68,29 +81,29 @@ void DataGen::generateData()
         throw std::runtime_error("Failed to initialize key pool.");
     }
 
-    if (startKeyPoolUpdateTask().isError())
-    {
-        LOG_ERROR("Failed to start key pool update task.");
-        throw std::runtime_error("Failed to start key pool update task.");
-    }
+    // if (startKeyPoolUpdateTask().isError())
+    // {
+    //     LOG_ERROR("Failed to start key pool update task.");
+    //     throw std::runtime_error("Failed to start key pool update task.");
+    // }
 
     // 创建线程池
     ThreadPool pool(numThreads_);
+
+    LOG_INFO("numThreads: " + std::to_string(numThreads_));
 
     // 提交文件生成任务到线程池
     for (size_t i = 1; i < totalFiles; ++i)
     {
         pool.enqueue([this, perFileDataSize]
-                     { this->generateFile(perFileDataSize); });
+                     { this->generateFile(perFileDataSize * 1024); });
     }
 
     // 最后一个线程处理 remainder
     pool.enqueue([this, perFileDataSize, remainder]
-                 { this->generateFile(perFileDataSize + remainder); });
+                 { this->generateFile(perFileDataSize * 1024 + remainder * 1024); });
 
-    // 不需要 join，析构 pool 会自动等所有任务完成
-    LOG_INFO("Data generation completed. Total files generated: " + std::to_string(totalFiles) +
-             ", Total data size: " + std::to_string(totalDataSize) + " bytes.");
+    return Result(Result::Ret::kOk, "Data generation completed successfully.");
 }
 
 // 生成指定大小的文件
@@ -121,7 +134,7 @@ Result DataGen::generateFile(size_t fileSize)
             initializeKeyPool(); // 如果发生异常，重新初始化键池
             --i;                 // 重试当前条目
         }
-        LOG_INFO("Generated entry " + std::to_string(i) + ": " +
+        LOG_INFO("Thread ID: " + thread_id_to_string(std::this_thread::get_id()) + " Generated entry " + std::to_string(i) + ": " +
                  entry["key"] + " -> " + entry["value"]);
     }
 
@@ -136,7 +149,7 @@ Result DataGen::generateFile(size_t fileSize)
     res = fileManager_->write(data);
     if (res.isError())
     {
-        LOG_ERROR(res.message());
+        LOG_ERROR("File write error : " + res.message());
         return Result(Result::Ret::kFileWriteError, res.message());
     }
     return Result(Result::Ret::kOk, "File generated successfully.");
@@ -154,7 +167,6 @@ Result DataGen::generateKey()
 
     std::mt19937 gen(std::random_device{}());
     std::uniform_int_distribution<size_t> dist(0, keyPool_.size() - 1);
-    LOG_INFO("Generating key: " + keyPool_[dist(gen)]);
     return Result(Result::Ret::kOk, keyPool_[dist(gen)]);
 }
 
