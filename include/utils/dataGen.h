@@ -24,11 +24,7 @@ public:
 
     ~DataGen()
     {
-        stopUpdateThread_ = true;
-        if (updateThread_.joinable())
-        {
-            updateThread_.join(); // 等待线程安全退出
-        }
+        // stopUpdateThread();
     }
 
     // 生成数据的主函数
@@ -50,7 +46,8 @@ public:
     Result loadConfig(const std::string &configFilePath);
 
     Result rebuildKeyPool();
-    Result startKeyPoolUpdateTask();
+    // Result startKeyPoolUpdateTask();
+    // Result stopUpdateThread();
 
     // 获取当前键池用于测试
     std::vector<std::string> &getKeyPool();
@@ -60,16 +57,16 @@ public:
 private:
     std::shared_ptr<FileManagerBase> fileManager_;
     // 文件管理器实例
-    std::vector<std::string> keyPool_;                                          // 键池
-    json config_;                                                               // 配置文件内容
-    std::string keyPrefix_;                                                     // 键前缀
-    std::string valuePrefix_;                                                   // 值前缀
-    size_t keyPoolSize_;                                                        // 键池大小
-    double maxFileSizeMB_;                                                      // 每个文件的最大大小（MB）
-    double targetSizeGB_;                                                       // 目标数据大小（GB）
-    double maxSizeGB_;                                                          // 最大数据大小（GB）
-    double approxEntrySizeKB_;                                                  // 每个条目的平均大小（KB）
-    std::chrono::minutes poolUpdateInterval_;                                   // 键池更新的时间间隔
+    std::vector<std::string> keyPool_; // 键池
+    json config_;                      // 配置文件内容
+    std::string keyPrefix_;            // 键前缀
+    std::string valuePrefix_;          // 值前缀
+    size_t keyPoolSize_;               // 键池大小
+    double maxFileSizeMB_;             // 每个文件的最大大小（MB）
+    double targetSizeGB_;              // 目标数据大小（GB）
+    double maxSizeGB_;                 // 最大数据大小（GB）
+    double approxEntrySizeKB_;         // 每个条目的平均大小（KB）
+    // std::chrono::seconds poolUpdateInterval_ = std::chrono::seconds(1);         // 键池更新的时间间隔
     size_t numThreads_ = std::max(1u, std::thread::hardware_concurrency() - 1); // 线程数，至少1个线程
     std::atomic<bool> stopUpdateThread_{false};
     std::thread updateThread_; // 后台线程用于定期更新键池

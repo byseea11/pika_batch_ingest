@@ -29,7 +29,12 @@ DataGen::DataGen(const std::string &configFilePath, const std::string &dicPath)
         LOG_ERROR("Failed to load configuration from " + configFilePath);
         throw std::runtime_error("Failed to load configuration from " + configFilePath);
     }
-    initializeKeyPool();
+    // 初始化键池
+    if (initializeKeyPool().isError())
+    {
+        LOG_ERROR("Failed to initialize key pool.");
+        throw std::runtime_error("Failed to initialize key pool.");
+    }
 }
 
 // 从配置文件加载配置
@@ -73,19 +78,6 @@ Result DataGen::generateData()
     LOG_INFO("Total data size: " + std::to_string(totalDataSize) +
              " MB, Total files to generate: " + std::to_string(totalFiles) +
              ", Remainder: " + std::to_string(remainder) + " MB.");
-
-    // 初始化键池
-    if (initializeKeyPool().isError())
-    {
-        LOG_ERROR("Failed to initialize key pool.");
-        throw std::runtime_error("Failed to initialize key pool.");
-    }
-
-    // if (startKeyPoolUpdateTask().isError())
-    // {
-    //     LOG_ERROR("Failed to start key pool update task.");
-    //     throw std::runtime_error("Failed to start key pool update task.");
-    // }
 
     // 创建线程池
     ThreadPool pool(numThreads_);
@@ -131,8 +123,8 @@ Result DataGen::generateFile(size_t fileSize)
         catch (const std::exception &e)
         {
             LOG_ERROR("Failed to generate key: " + std::string(e.what()));
-            initializeKeyPool(); // 如果发生异常，重新初始化键池
-            --i;                 // 重试当前条目
+            rebuildKeyPool(); // 如果发生异常，重新初始化键池
+            --i;              // 重试当前条目
         }
         LOG_INFO("Thread ID: " + thread_id_to_string(std::this_thread::get_id()) + " Generated entry " + std::to_string(i) + ": " +
                  entry["key"] + " -> " + entry["value"]);
@@ -167,6 +159,7 @@ Result DataGen::generateKey()
 
     std::mt19937 gen(std::random_device{}());
     std::uniform_int_distribution<size_t> dist(0, keyPool_.size() - 1);
+    LOG_INFO("Thread ID: " + thread_id_to_string(std::this_thread::get_id()) + " Generating key from pool of size: " + std::to_string(keyPool_.size()));
     return Result(Result::Ret::kOk, keyPool_[dist(gen)]);
 }
 
@@ -181,31 +174,44 @@ Result DataGen::initializeKeyPool()
     LOG_INFO("Key pool initialized with size: " + std::to_string(keyPool_.size()));
     return Result(Result::Ret::kOk, "Key pool initialized successfully.");
 }
-
 Result DataGen::rebuildKeyPool()
 {
-    std::unique_lock<std::shared_mutex> lock(poolMutex_);
-    keyPool_.clear();
+    std::vector<std::string> newPool; // 临时容器
     for (size_t i = 0; i < numThreads_ * keyPoolSize_; ++i)
     {
-        keyPool_.push_back(keyPrefix_ + std::to_string(i));
+        newPool.push_back(keyPrefix_ + std::to_string(i));
+    }
+    {
+        std::unique_lock<std::shared_mutex> lock(poolMutex_);
+        keyPool_.swap(newPool); // 原子替换
     }
     LOG_INFO("Key pool rebuilt with size: " + std::to_string(keyPool_.size()));
-    return Result(Result::Ret::kOk, "Key pool rebuilt successfully.");
+    return Result::kOk;
 }
 
-Result DataGen::startKeyPoolUpdateTask()
-{
-    updateThread_ = std::thread([this]()
-                                {
-        while (!stopUpdateThread_) {
-            std::this_thread::sleep_for(poolUpdateInterval_);
-            rebuildKeyPool();
-        } });
-    return Result(Result::Ret::kOk, "Key pool update task started successfully.");
-}
+// Result DataGen::startKeyPoolUpdateTask()
+// {
+//     updateThread_ = std::thread([this]()
+//                                 {
+//         while (!stopUpdateThread_) {
+//             std::this_thread::sleep_for(poolUpdateInterval_);
+//             rebuildKeyPool();
+//         } });
+//     return Result(Result::Ret::kOk, "Key pool update task started successfully.");
+// }
 
-std::vector<std::string> &DataGen::getKeyPool()
+// Result DataGen::stopUpdateThread()
+// {
+//     stopUpdateThread_ = true;
+//     if (updateThread_.joinable())
+//     {
+//         updateThread_.join(); // 等待线程安全退出
+//     }
+//     return Result(Result::Ret::kOk, "Key pool update task stopped successfully.");
+// }
+
+std::vector<std::string> &
+DataGen::getKeyPool()
 {
     std::shared_lock<std::shared_mutex> lock(poolMutex_);
     return keyPool_;

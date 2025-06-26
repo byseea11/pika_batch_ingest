@@ -176,10 +176,17 @@ TEST_F(DataGenTest, GenerateDataSplitFiles)
     std::filesystem::remove("test_split_config.json");
 }
 
-TEST(DataGenTest, ConcurrentRebuildKeyPool)
+/**
+ * 测试多线程重建键池
+ * 键池内容验证​
+ * 测试竟态条件
+ * 定时任务触发模拟
+ */
+TEST_F(DataGenTest, RebuildKeyPoolConcurrentRebuildKeyPool)
 {
-    DataGen gen("test_config.json", "test_output");
-    const int threadCount = 10;
+    DataGen gen(configPath, outputDir);
+    const int threadCount = gen.getNumThreads();
+    size_t initialSize = gen.getKeyPool().size();
     std::vector<std::thread> threads;
     for (int i = 0; i < threadCount; ++i)
     {
@@ -188,5 +195,51 @@ TEST(DataGenTest, ConcurrentRebuildKeyPool)
     }
     for (auto &t : threads)
         t.join();
-    EXPECT_EQ(gen.getKeyPool().size(), gen.getNumThreads() * gen.getKeyPool().size());
+    EXPECT_EQ(gen.getKeyPool().size(), initialSize * threadCount);
 }
+
+TEST_F(DataGenTest, RebuildKeyKeyPoolContent)
+{
+    DataGen gen(configPath, outputDir);
+    gen.rebuildKeyPool();
+    auto pool = gen.getKeyPool();
+    for (size_t i = 0; i < pool.size(); ++i)
+    {
+        EXPECT_FALSE(pool[i].size() == 0);
+    }
+}
+
+TEST_F(DataGenTest, RebuildKeyReadDuringRebuild)
+{
+    DataGen gen(configPath, outputDir);
+    std::atomic<bool> stop(false);
+    std::thread updater([&gen, &stop]
+                        {
+        while (!stop) gen.rebuildKeyPool(); });
+    std::vector<std::thread> readers;
+    for (int i = 0; i < 5; ++i)
+    {
+        readers.emplace_back([&gen, &stop]
+                             {
+            while (!stop) {
+                auto pool = gen.getKeyPool(); 
+                EXPECT_FALSE(pool.empty());
+            } });
+    }
+    std::this_thread::sleep_for(std::chrono::seconds(1)); // 测试运行1秒
+    stop = true;
+    updater.join();
+    for (auto &t : readers)
+        t.join();
+}
+
+// TEST_F(DataGenTest, RebuildKeyKeyPoolUpdateInterval)
+// {
+//     DataGen gen(configPath, outputDir);
+//     auto initialSize = gen.getKeyPool().size(); // 直接获取当前键池大小
+//     gen.startKeyPoolUpdateTask();
+//     std::this_thread::sleep_for(std::chrono::seconds(3));
+//     auto updatedSize = gen.getKeyPool().size(); // 重新获取最新键池大小
+//     EXPECT_NE(initialSize, updatedSize);        // 比较最新状态
+//     gen.stopUpdateThread();
+// }

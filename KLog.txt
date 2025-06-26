@@ -3234,3 +3234,2655 @@
 2025-06-26 20:42:36 [INFO] Thread ID: 129874907870784 Generated entry 1: key_455 -> val_2306
 2025-06-26 20:42:36 [INFO] Thread ID: 129874907870784 Generated entry 1: key_455 -> val_2306
 2025-06-26 20:42:36 [INFO] Thread ID: 129874924656192 Generated entry 1: key_2133 -> val_3897
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Thread ID: 140466515564352 Generated entry 0: key_92 -> val_1436
+2025-06-26 20:54:49 [INFO] Thread ID: 140466515564352 Generated entry 1: key_2939 -> val_1115
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [WARNING] No data generated for file, skipping write.
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 20:54:49 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:54:49 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Thread ID: 140466515564352 Generated entry 18446744073709551615:  -> 
+2025-06-26 20:54:49 [INFO] Thread ID: 140466515564352 Generated entry 0: key_376 -> val_2793799541839771237
+2025-06-26 20:54:49 [INFO] Thread ID: 140466515564352 Generated entry 1: key_674 -> val_16926833379331161981
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Thread ID: 140466515564352 Generated entry 0: key_2020 -> val_669
+2025-06-26 20:54:49 [INFO] Thread ID: 140466515564352 Generated entry 1: key_2492 -> val_1188
+2025-06-26 20:54:49 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 20:54:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:54:49 [INFO] numThreads: 31
+2025-06-26 20:54:49 [INFO] Thread ID: 140466509051456 Generated entry 0: key_397 -> val_3697
+2025-06-26 20:54:49 [INFO] Thread ID: 140466500658752 Generated entry 0: key_1289 -> val_1670
+2025-06-26 20:54:49 [INFO] Thread ID: 140466509051456 Generated entry 1: key_393 -> val_2575
+2025-06-26 20:54:49 [INFO] Thread ID: 140466500658752 Generated entry 1: key_1119 -> val_1222
+2025-06-26 20:54:49 [INFO] Thread ID: 140466475480640 Generated entry 0: key_2906 -> val_2738
+2025-06-26 20:54:49 [INFO] Thread ID: 140466475480640 Generated entry 1: key_3692 -> val_3503
+2025-06-26 20:54:49 [INFO] Thread ID: 140466492266048 Generated entry 0: key_1187 -> val_2966
+2025-06-26 20:54:49 [INFO] Thread ID: 140466416731712 Generated entry 0: key_2504 -> val_519
+2025-06-26 20:54:49 [INFO] Thread ID: 140466416731712 Generated entry 0: key_2504 -> val_519
+2025-06-26 20:54:49 [INFO] Thread ID: 140466408339008 Generated entry 0: key_1004 -> val_1875
+2025-06-26 20:54:49 [INFO] Thread ID: 140466408339008 Generated entry 0: key_1004 -> val_1875
+2025-06-26 20:54:49 [INFO] Thread ID: 140466483873344 Generated entry 1: key_289 -> val_1887
+2025-06-26 20:54:49 [INFO] Thread ID: 140466425124416 Generated entry 0: key_2056 -> val_237
+2025-06-26 20:54:49 [INFO] Thread ID: 140466450302528 Generated entry 1: key_784 -> val_3895
+2025-06-26 20:54:49 [INFO] Thread ID: 140466408339008 Generated entry 1: key_3209 -> val_1097
+2025-06-26 20:54:49 [INFO] Thread ID: 140466425124416 Generated entry 1: key_3247 -> val_2188
+2025-06-26 20:54:49 [INFO] Thread ID: 140466441909824 Generated entry 1: key_287 -> val_264
+2025-06-26 20:54:49 [INFO] Thread ID: 140466492266048 Generated entry 1: key_897 -> val_1463
+2025-06-26 20:54:49 [INFO] Thread ID: 140466433517120 Generated entry 0: key_2734 -> val_1066
+2025-06-26 20:54:49 [INFO] Thread ID: 140466433517120 Generated entry 0: key_2734 -> val_1066
+2025-06-26 20:54:49 [INFO] Thread ID: 140466433517120 Generated entry 1: key_3904 -> val_1569
+2025-06-26 20:54:49 [INFO] Thread ID: 140466416731712 Generated entry 1: key_2188 -> val_1498
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Thread ID: 126186317911872 Generated entry 0: key_3575 -> val_2630
+2025-06-26 20:55:31 [INFO] Thread ID: 126186317911872 Generated entry 1: key_1246 -> val_1992
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [WARNING] No data generated for file, skipping write.
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 20:55:31 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:55:31 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Thread ID: 126186317911872 Generated entry 18446744073709551615:  -> 
+2025-06-26 20:55:31 [INFO] Thread ID: 126186317911872 Generated entry 0: key_2318 -> val_7138939414412122222
+2025-06-26 20:55:31 [INFO] Thread ID: 126186317911872 Generated entry 1: key_3975 -> val_2143705618211870711
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Thread ID: 126186317911872 Generated entry 0: key_218 -> val_1611
+2025-06-26 20:55:31 [INFO] Thread ID: 126186317911872 Generated entry 1: key_698 -> val_2764
+2025-06-26 20:55:31 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] numThreads: 31
+2025-06-26 20:55:31 [INFO] Thread ID: 126186302727744 Generated entry 0: key_3415 -> val_991
+2025-06-26 20:55:31 [INFO] Thread ID: 126186302727744 Generated entry 1: key_3548 -> val_2002
+2025-06-26 20:55:31 [INFO] Thread ID: 126186311120448 Generated entry 0: key_3968 -> val_84
+2025-06-26 20:55:31 [INFO] Thread ID: 126186311120448 Generated entry 1: key_3757 -> val_3877
+2025-06-26 20:55:31 [INFO] Thread ID: 126186227193408 Generated entry 0: key_3333 -> val_1000
+2025-06-26 20:55:31 [INFO] Thread ID: 126186227193408 Generated entry 1: key_1168 -> val_133
+2025-06-26 20:55:31 [INFO] Thread ID: 126186176837184 Generated entry 0: key_1548 -> val_3321
+2025-06-26 20:55:31 [INFO] Thread ID: 126186218800704 Generated entry 1: key_1252 -> val_2500
+2025-06-26 20:55:31 [INFO] Thread ID: 126186277549632 Generated entry 0: key_2753 -> val_3722
+2025-06-26 20:55:31 [INFO] Thread ID: 126186277549632 Generated entry 0: key_2753 -> val_3722
+2025-06-26 20:55:31 [INFO] Thread ID: 126186277549632 Generated entry 0: key_2753 -> val_3722
+2025-06-26 20:55:31 [INFO] Thread ID: 126186176837184 Generated entry 1: key_1556 -> val_1709
+2025-06-26 20:55:31 [INFO] Thread ID: 126186277549632 Generated entry 1: key_3987 -> val_1115
+2025-06-26 20:55:31 [INFO] Thread ID: 126186285942336 Generated entry 1: key_3482 -> val_3713
+2025-06-26 20:55:31 [INFO] Thread ID: 126186168444480 Generated entry 0: key_1030 -> val_1881
+2025-06-26 20:55:31 [INFO] Thread ID: 126186168444480 Generated entry 1: key_2318 -> val_3463
+2025-06-26 20:55:31 [INFO] Thread ID: 126186168444480 Generated entry 1: key_2318 -> val_3463
+2025-06-26 20:55:31 [INFO] Thread ID: 126186168444480 Generated entry 1: key_2318 -> val_3463
+2025-06-26 20:55:31 [INFO] Thread ID: 126186210408000 Generated entry 1: key_1860 -> val_317
+2025-06-26 20:55:31 [INFO] Thread ID: 126186243978816 Generated entry 0: key_3868 -> val_775
+2025-06-26 20:55:31 [INFO] Thread ID: 126186243978816 Generated entry 0: key_3868 -> val_775
+2025-06-26 20:55:31 [INFO] Thread ID: 126186243978816 Generated entry 1: key_1868 -> val_1516
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:31 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Thread ID: 134720088549184 Generated entry 0: key_3348 -> val_3274
+2025-06-26 20:55:48 [INFO] Thread ID: 134720088549184 Generated entry 1: key_2856 -> val_3231
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [WARNING] No data generated for file, skipping write.
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 20:55:48 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:55:48 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Thread ID: 134720088549184 Generated entry 18446744073709551615:  -> 
+2025-06-26 20:55:48 [INFO] Thread ID: 134720088549184 Generated entry 0: key_1515 -> val_1353898583741593463
+2025-06-26 20:55:48 [INFO] Thread ID: 134720088549184 Generated entry 1: key_3189 -> val_6407628600533556100
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Thread ID: 134720088549184 Generated entry 0: key_2039 -> val_2081
+2025-06-26 20:55:48 [INFO] Thread ID: 134720088549184 Generated entry 1: key_1539 -> val_2077
+2025-06-26 20:55:48 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] numThreads: 31
+2025-06-26 20:55:48 [INFO] Thread ID: 134720073492032 Generated entry 0: key_1181 -> val_885
+2025-06-26 20:55:48 [INFO] Thread ID: 134720056706624 Generated entry 0: key_2067 -> val_3783
+2025-06-26 20:55:48 [INFO] Thread ID: 134720031528512 Generated entry 0: key_2467 -> val_1067
+2025-06-26 20:55:48 [INFO] Thread ID: 134720023135808 Generated entry 0: key_2466 -> val_1222
+2025-06-26 20:55:48 [INFO] Thread ID: 134719981172288 Generated entry 0: key_1786 -> val_1234
+2025-06-26 20:55:48 [INFO] Thread ID: 134720031528512 Generated entry 1: key_1312 -> val_392
+2025-06-26 20:55:48 [INFO] Thread ID: 134720023135808 Generated entry 1: key_356 -> val_2322
+2025-06-26 20:55:48 [INFO] Thread ID: 134720023135808 Generated entry 1: key_356 -> val_2322
+2025-06-26 20:55:48 [INFO] Thread ID: 134719981172288 Generated entry 1: key_3283 -> val_744
+2025-06-26 20:55:48 [INFO] Thread ID: 134720056706624 Generated entry 1: key_3762 -> val_2857
+2025-06-26 20:55:48 [INFO] Thread ID: 134720073492032 Generated entry 1: key_445 -> val_1471
+2025-06-26 20:55:48 [INFO] Thread ID: 134720081884736 Generated entry 0: key_835 -> val_3459
+2025-06-26 20:55:48 [INFO] Thread ID: 134720048313920 Generated entry 0: key_1620 -> val_1274
+2025-06-26 20:55:48 [INFO] Thread ID: 134720039921216 Generated entry 1: key_198 -> val_1161
+2025-06-26 20:55:48 [INFO] Thread ID: 134720039921216 Generated entry 1: key_198 -> val_1161
+2025-06-26 20:55:48 [INFO] Thread ID: 134719997957696 Generated entry 1: key_603 -> val_2948
+2025-06-26 20:55:48 [INFO] Thread ID: 134719997957696 Generated entry 1: key_603 -> val_2948
+2025-06-26 20:55:48 [INFO] Thread ID: 134720014743104 Generated entry 0: key_296 -> val_293
+2025-06-26 20:55:48 [INFO] Thread ID: 134720014743104 Generated entry 1: key_3479 -> val_134
+2025-06-26 20:55:48 [INFO] Thread ID: 134720014743104 Generated entry 1: key_3479 -> val_134
+2025-06-26 20:55:48 [INFO] Thread ID: 134720014743104 Generated entry 1: key_3479 -> val_134
+2025-06-26 20:55:48 [INFO] Thread ID: 134720048313920 Generated entry 1: key_2391 -> val_2047
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:55:48 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Thread ID: 138341907687232 Generated entry 0: key_2809 -> val_1542
+2025-06-26 20:56:47 [INFO] Thread ID: 138341907687232 Generated entry 1: key_701 -> val_3775
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [WARNING] No data generated for file, skipping write.
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 20:56:47 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:56:47 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Thread ID: 138341907687232 Generated entry 18446744073709551615:  -> 
+2025-06-26 20:56:47 [INFO] Thread ID: 138341907687232 Generated entry 0: key_2281 -> val_8828938601151802299
+2025-06-26 20:56:47 [INFO] Thread ID: 138341907687232 Generated entry 1: key_3535 -> val_5394482519448448663
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Thread ID: 138341907687232 Generated entry 0: key_2009 -> val_3103
+2025-06-26 20:56:47 [INFO] Thread ID: 138341907687232 Generated entry 1: key_1271 -> val_1873
+2025-06-26 20:56:47 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] numThreads: 31
+2025-06-26 20:56:47 [INFO] Thread ID: 138341901137472 Generated entry 0: key_40 -> val_1141
+2025-06-26 20:56:47 [INFO] Thread ID: 138341875959360 Generated entry 0: key_1548 -> val_3858
+2025-06-26 20:56:47 [INFO] Thread ID: 138341901137472 Generated entry 1: key_1477 -> val_2277
+2025-06-26 20:56:47 [INFO] Thread ID: 138341875959360 Generated entry 1: key_1226 -> val_665
+2025-06-26 20:56:47 [INFO] Thread ID: 138341884352064 Generated entry 0: key_559 -> val_874
+2025-06-26 20:56:47 [INFO] Thread ID: 138341884352064 Generated entry 1: key_2691 -> val_2101
+2025-06-26 20:56:47 [INFO] Thread ID: 138341884352064 Generated entry 1: key_2691 -> val_2101
+2025-06-26 20:56:47 [INFO] Thread ID: 138341892744768 Generated entry 0: key_1137 -> val_2241
+2025-06-26 20:56:47 [INFO] Thread ID: 138341649356352 Generated entry 1: key_3030 -> val_3257
+2025-06-26 20:56:47 [INFO] Thread ID: 138341649356352 Generated entry 1: key_3030 -> val_3257
+2025-06-26 20:56:47 [INFO] Thread ID: 138341859173952 Generated entry 0: key_2767 -> val_1627
+2025-06-26 20:56:47 [INFO] Thread ID: 138341842388544 Generated entry 0: key_767 -> val_3716
+2025-06-26 20:56:47 [INFO] Thread ID: 138341867566656 Generated entry 0: key_3151 -> val_1301
+2025-06-26 20:56:47 [INFO] Thread ID: 138341850781248 Generated entry 0: key_3553 -> val_2188
+2025-06-26 20:56:47 [INFO] Thread ID: 138341850781248 Generated entry 1: key_1758 -> val_9
+2025-06-26 20:56:47 [INFO] Thread ID: 138341833995840 Generated entry 1: key_2101 -> val_1300
+2025-06-26 20:56:47 [INFO] Thread ID: 138341817210432 Generated entry 1: key_1866 -> val_3541
+2025-06-26 20:56:47 [INFO] Thread ID: 138341817210432 Generated entry 1: key_1866 -> val_3541
+2025-06-26 20:56:47 [INFO] Thread ID: 138341892744768 Generated entry 1: key_1387 -> val_1136
+2025-06-26 20:56:47 [INFO] Thread ID: 138341892744768 Generated entry 1: key_1387 -> val_1136
+2025-06-26 20:56:47 [INFO] Thread ID: 138341867566656 Generated entry 1: key_362 -> val_3528
+2025-06-26 20:56:47 [INFO] Thread ID: 138341842388544 Generated entry 1: key_1718 -> val_3158
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:56:47 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Thread ID: 124197754672960 Generated entry 0: key_1606 -> val_1501
+2025-06-26 20:58:34 [INFO] Thread ID: 124197754672960 Generated entry 1: key_2486 -> val_3275
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [WARNING] No data generated for file, skipping write.
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 20:58:34 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [ERROR] Key pool is unexpectedly empty
+2025-06-26 20:58:34 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Thread ID: 124197754672960 Generated entry 18446744073709551615:  -> 
+2025-06-26 20:58:34 [INFO] Thread ID: 124197754672960 Generated entry 0: key_2351 -> val_15828115500561810040
+2025-06-26 20:58:34 [INFO] Thread ID: 124197754672960 Generated entry 1: key_1701 -> val_11024750660678950004
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Thread ID: 124197754672960 Generated entry 0: key_166 -> val_136
+2025-06-26 20:58:34 [INFO] Thread ID: 124197754672960 Generated entry 1: key_3066 -> val_2202
+2025-06-26 20:58:34 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] numThreads: 31
+2025-06-26 20:58:34 [INFO] Thread ID: 124197739161152 Generated entry 0: key_2198 -> val_1868
+2025-06-26 20:58:34 [INFO] Thread ID: 124197680412224 Generated entry 0: key_3939 -> val_3758
+2025-06-26 20:58:34 [INFO] Thread ID: 124197680412224 Generated entry 1: key_3206 -> val_1844
+2025-06-26 20:58:34 [INFO] Thread ID: 124197688804928 Generated entry 0: key_3237 -> val_1931
+2025-06-26 20:58:34 [INFO] Thread ID: 124197722375744 Generated entry 0: key_253 -> val_3022
+2025-06-26 20:58:34 [INFO] Thread ID: 124197646841408 Generated entry 0: key_109 -> val_2863
+2025-06-26 20:58:34 [INFO] Thread ID: 124197747553856 Generated entry 0: key_2170 -> val_2292
+2025-06-26 20:58:34 [INFO] Thread ID: 124197747553856 Generated entry 0: key_2170 -> val_2292
+2025-06-26 20:58:34 [INFO] Thread ID: 124197672019520 Generated entry 1: key_2357 -> val_3652
+2025-06-26 20:58:34 [INFO] Thread ID: 124197697197632 Generated entry 0: key_588 -> val_2680
+2025-06-26 20:58:34 [INFO] Thread ID: 124197697197632 Generated entry 1: key_3395 -> val_728
+2025-06-26 20:58:34 [INFO] Thread ID: 124197713983040 Generated entry 0: key_234 -> val_589
+2025-06-26 20:58:34 [INFO] Thread ID: 124197730768448 Generated entry 1: key_3177 -> val_1270
+2025-06-26 20:58:34 [INFO] Thread ID: 124197722375744 Generated entry 1: key_1560 -> val_926
+2025-06-26 20:58:34 [INFO] Thread ID: 124197722375744 Generated entry 1: key_1560 -> val_926
+2025-06-26 20:58:34 [INFO] Thread ID: 124197722375744 Generated entry 1: key_1560 -> val_926
+2025-06-26 20:58:34 [INFO] Thread ID: 124197663626816 Generated entry 0: key_2695 -> val_2247
+2025-06-26 20:58:34 [INFO] Thread ID: 124197663626816 Generated entry 0: key_2695 -> val_2247
+2025-06-26 20:58:34 [INFO] Thread ID: 124197663626816 Generated entry 1: key_3632 -> val_1680
+2025-06-26 20:58:34 [INFO] Thread ID: 124197663626816 Generated entry 1: key_3632 -> val_1680
+2025-06-26 20:58:34 [INFO] Thread ID: 124197663626816 Generated entry 1: key_3632 -> val_1680
+2025-06-26 20:58:34 [INFO] Thread ID: 124197713983040 Generated entry 1: key_373 -> val_555
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Key pool initialized with size: 4000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:34 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:35 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:35 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:35 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:35 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 20:58:35 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Thread ID: 135789579921216 Generated entry 0: key_999 -> val_1433
+2025-06-26 21:04:56 [INFO] Thread ID: 135789579921216 Generated entry 1: key_3202 -> val_590
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:04:56 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:04:56 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Thread ID: 135789579921216 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:04:56 [INFO] Thread ID: 135789579921216 Generated entry 0: key_2350 -> val_10397385594676233697
+2025-06-26 21:04:56 [INFO] Thread ID: 135789579921216 Generated entry 1: key_3657 -> val_16113258614974705975
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Thread ID: 135789579921216 Generated entry 0: key_797 -> val_2519
+2025-06-26 21:04:56 [INFO] Thread ID: 135789579921216 Generated entry 1: key_540 -> val_2546
+2025-06-26 21:04:56 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] numThreads: 31
+2025-06-26 21:04:56 [INFO] Thread ID: 135789572781632 Generated entry 0: key_3734 -> val_3036
+2025-06-26 21:04:56 [INFO] Thread ID: 135789572781632 Generated entry 1: key_2437 -> val_3068
+2025-06-26 21:04:56 [INFO] Thread ID: 135789572781632 Generated entry 1: key_2437 -> val_3068
+2025-06-26 21:04:56 [INFO] Thread ID: 135789480461888 Generated entry 1: key_2044 -> val_1847
+2025-06-26 21:04:56 [INFO] Thread ID: 135789564388928 Generated entry 0: key_1960 -> val_3548
+2025-06-26 21:04:56 [INFO] Thread ID: 135789539210816 Generated entry 0: key_3846 -> val_1966
+2025-06-26 21:04:56 [INFO] Thread ID: 135789539210816 Generated entry 0: key_3846 -> val_1966
+2025-06-26 21:04:56 [INFO] Thread ID: 135789539210816 Generated entry 1: key_2826 -> val_2562
+2025-06-26 21:04:56 [INFO] Thread ID: 135789539210816 Generated entry 1: key_2826 -> val_2562
+2025-06-26 21:04:56 [INFO] Thread ID: 135789555996224 Generated entry 0: key_2590 -> val_2205
+2025-06-26 21:04:56 [INFO] Thread ID: 135789555996224 Generated entry 1: key_3792 -> val_3826
+2025-06-26 21:04:56 [INFO] Thread ID: 135789547603520 Generated entry 0: key_604 -> val_1638
+2025-06-26 21:04:56 [INFO] Thread ID: 135789547603520 Generated entry 0: key_604 -> val_1638
+2025-06-26 21:04:56 [INFO] Thread ID: 135789547603520 Generated entry 0: key_604 -> val_1638
+2025-06-26 21:04:56 [INFO] Thread ID: 135789497247296 Generated entry 0: key_2154 -> val_1290
+2025-06-26 21:04:56 [INFO] Thread ID: 135789497247296 Generated entry 0: key_2154 -> val_1290
+2025-06-26 21:04:56 [INFO] Thread ID: 135789497247296 Generated entry 1: key_361 -> val_2983
+2025-06-26 21:04:56 [INFO] Thread ID: 135789522425408 Generated entry 1: key_2335 -> val_2512
+2025-06-26 21:04:56 [INFO] Thread ID: 135789505640000 Generated entry 1: key_2091 -> val_1710
+2025-06-26 21:04:56 [INFO] Thread ID: 135789514032704 Generated entry 1: key_2217 -> val_3014
+2025-06-26 21:04:56 [INFO] Thread ID: 135789514032704 Generated entry 1: key_2217 -> val_3014
+2025-06-26 21:04:56 [INFO] Thread ID: 135789514032704 Generated entry 1: key_2217 -> val_3014
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:04:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generated entry 0: key_1687 -> val_1127
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generated entry 1: key_2311 -> val_3580
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:05:58 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:05:58 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generated entry 0: key_523 -> val_8683048393111908443
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generated entry 1: key_2659 -> val_15896299281979383153
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generated entry 0: key_564 -> val_3102
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129402644288 Generated entry 1: key_3586 -> val_3345
+2025-06-26 21:05:58 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] numThreads: 31
+2025-06-26 21:05:58 [INFO] Thread ID: 135129378838080 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129378838080 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129353659968 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129353659968 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129353659968 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129387230784 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129387230784 Generated entry 1: key_249 -> val_511
+2025-06-26 21:05:58 [INFO] Thread ID: 135129311696448 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129328481856 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129328481856 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129353659968 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129353659968 Generated entry 1: key_2651 -> val_2637
+2025-06-26 21:05:58 [INFO] Thread ID: 135129378838080 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129378838080 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129311696448 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129311696448 Generated entry 1: key_730 -> val_3609
+2025-06-26 21:05:58 [INFO] Thread ID: 135129336874560 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129303303744 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129303303744 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129303303744 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129303303744 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129378838080 Generated entry 1: key_3632 -> val_1190
+2025-06-26 21:05:58 [INFO] Thread ID: 135129378838080 Generated entry 1: key_3632 -> val_1190
+2025-06-26 21:05:58 [INFO] Thread ID: 135129362052672 Generated entry 0: key_3996 -> val_1516
+2025-06-26 21:05:58 [INFO] Thread ID: 135129362052672 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129362052672 Generated entry 1: key_603 -> val_1435
+2025-06-26 21:05:58 [INFO] Thread ID: 135129320089152 Generated entry 0: key_2220 -> val_790
+2025-06-26 21:05:58 [INFO] Thread ID: 135129320089152 Generated entry 0: key_2220 -> val_790
+2025-06-26 21:05:58 [INFO] Thread ID: 135129320089152 Generated entry 0: key_2220 -> val_790
+2025-06-26 21:05:58 [INFO] Thread ID: 135129320089152 Generated entry 0: key_2220 -> val_790
+2025-06-26 21:05:58 [INFO] Thread ID: 135129328481856 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129328481856 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129328481856 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129328481856 Generated entry 1: key_598 -> val_709
+2025-06-26 21:05:58 [INFO] Thread ID: 135129345267264 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129345267264 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129345267264 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129303303744 Generated entry 1: key_3093 -> val_3837
+2025-06-26 21:05:58 [INFO] Thread ID: 135129395623488 Generated entry 1: key_1159 -> val_3504
+2025-06-26 21:05:58 [INFO] Thread ID: 135129395623488 Generated entry 1: key_1159 -> val_3504
+2025-06-26 21:05:58 [INFO] Thread ID: 135129336874560 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129336874560 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129336874560 Generating key from pool of size: 4000
+2025-06-26 21:05:58 [INFO] Thread ID: 135129336874560 Generated entry 1: key_209 -> val_640
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:58 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:05:59 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generated entry 0: key_1724 -> val_3693
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generated entry 1: key_110 -> val_434
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:10:42 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:10:42 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generated entry 0: key_679 -> val_3648821492096866794
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generated entry 1: key_2011 -> val_5863777217633038387
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generated entry 0: key_1543 -> val_3397
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855469741888 Generated entry 1: key_1008 -> val_456
+2025-06-26 21:10:42 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] numThreads: 31
+2025-06-26 21:10:42 [INFO] Thread ID: 124855454262848 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855454262848 Generated entry 0: key_3113 -> val_2138
+2025-06-26 21:10:42 [INFO] Thread ID: 124855445870144 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855395513920 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855387121216 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855387121216 Generated entry 0: key_192 -> val_357
+2025-06-26 21:10:42 [INFO] Thread ID: 124855387121216 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855387121216 Generated entry 1: key_3817 -> val_2429
+2025-06-26 21:10:42 [INFO] Thread ID: 124855395513920 Generated entry 0: key_3404 -> val_2953
+2025-06-26 21:10:42 [INFO] Thread ID: 124855395513920 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855395513920 Generated entry 1: key_3519 -> val_478
+2025-06-26 21:10:42 [INFO] Thread ID: 124855395513920 Generated entry 1: key_3519 -> val_478
+2025-06-26 21:10:42 [INFO] Thread ID: 124855420692032 Generated entry 0: key_1817 -> val_2234
+2025-06-26 21:10:42 [INFO] Thread ID: 124855420692032 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855420692032 Generated entry 1: key_313 -> val_2136
+2025-06-26 21:10:42 [INFO] Thread ID: 124855420692032 Generated entry 1: key_313 -> val_2136
+2025-06-26 21:10:42 [INFO] Thread ID: 124855462655552 Generated entry 0: key_3928 -> val_1130
+2025-06-26 21:10:42 [INFO] Thread ID: 124855429084736 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855429084736 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855403906624 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855403906624 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855445870144 Generated entry 0: key_2611 -> val_2622
+2025-06-26 21:10:42 [INFO] Thread ID: 124855445870144 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855445870144 Generated entry 1: key_3532 -> val_1691
+2025-06-26 21:10:42 [INFO] Thread ID: 124855445870144 Generated entry 1: key_3532 -> val_1691
+2025-06-26 21:10:42 [INFO] Thread ID: 124855378728512 Generated entry 0: key_148 -> val_3585
+2025-06-26 21:10:42 [INFO] Thread ID: 124855378728512 Generated entry 0: key_148 -> val_3585
+2025-06-26 21:10:42 [INFO] Thread ID: 124855437477440 Generated entry 0: key_3593 -> val_317
+2025-06-26 21:10:42 [INFO] Thread ID: 124855437477440 Generated entry 0: key_3593 -> val_317
+2025-06-26 21:10:42 [INFO] Thread ID: 124855437477440 Generated entry 0: key_3593 -> val_317
+2025-06-26 21:10:42 [INFO] Thread ID: 124855462655552 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855462655552 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855454262848 Generated entry 1: key_1629 -> val_583
+2025-06-26 21:10:42 [INFO] Thread ID: 124855378728512 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855378728512 Generated entry 1: key_957 -> val_2942
+2025-06-26 21:10:42 [INFO] Thread ID: 124855403906624 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855403906624 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855403906624 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855429084736 Generated entry 0: key_2547 -> val_3606
+2025-06-26 21:10:42 [INFO] Thread ID: 124855429084736 Generating key from pool of size: 4000
+2025-06-26 21:10:42 [INFO] Thread ID: 124855429084736 Generated entry 1: key_3211 -> val_3055
+2025-06-26 21:10:42 [INFO] Thread ID: 124855429084736 Generated entry 1: key_3211 -> val_3055
+2025-06-26 21:10:42 [INFO] Thread ID: 124855429084736 Generated entry 1: key_3211 -> val_3055
+2025-06-26 21:10:42 [INFO] Thread ID: 124855403906624 Generated entry 1: key_1990 -> val_1982
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:42 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:43 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:43 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:43 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:10:44 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generated entry 0: key_1368 -> val_27
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generated entry 1: key_2613 -> val_3611
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:17:56 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:17:56 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generated entry 0: key_1802 -> val_14696377021318743426
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generated entry 1: key_3100 -> val_8057271450484162687
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generated entry 0: key_2983 -> val_242
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459659388736 Generated entry 1: key_1221 -> val_3759
+2025-06-26 21:17:56 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] numThreads: 31
+2025-06-26 21:17:56 [INFO] Thread ID: 130459635799616 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459635799616 Generated entry 0: key_3346 -> val_678
+2025-06-26 21:17:56 [INFO] Thread ID: 130459635799616 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459635799616 Generated entry 1: key_2960 -> val_1818
+2025-06-26 21:17:56 [INFO] Thread ID: 130459627406912 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459577050688 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459585443392 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459593836096 Generated entry 0: key_946 -> val_821
+2025-06-26 21:17:56 [INFO] Thread ID: 130459593836096 Generated entry 0: key_946 -> val_821
+2025-06-26 21:17:56 [INFO] Thread ID: 130459593836096 Generated entry 0: key_946 -> val_821
+2025-06-26 21:17:56 [INFO] Thread ID: 130459627406912 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459627406912 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459627406912 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459577050688 Generated entry 0: key_2270 -> val_589
+2025-06-26 21:17:56 [INFO] Thread ID: 130459577050688 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459577050688 Generated entry 1: key_587 -> val_3482
+2025-06-26 21:17:56 [INFO] Thread ID: 130459619014208 Generated entry 0: key_1513 -> val_3453
+2025-06-26 21:17:56 [INFO] Thread ID: 130459619014208 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459619014208 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459652585024 Generated entry 0: key_2133 -> val_1870
+2025-06-26 21:17:56 [INFO] Thread ID: 130459652585024 Generated entry 0: key_2133 -> val_1870
+2025-06-26 21:17:56 [INFO] Thread ID: 130459619014208 Generated entry 1: key_3782 -> val_3202
+2025-06-26 21:17:56 [INFO] Thread ID: 130459619014208 Generated entry 1: key_3782 -> val_3202
+2025-06-26 21:17:56 [INFO] Thread ID: 130459593836096 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459644192320 Generated entry 0: key_2571 -> val_2113
+2025-06-26 21:17:56 [INFO] Thread ID: 130459652585024 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459652585024 Generated entry 1: key_1554 -> val_611
+2025-06-26 21:17:56 [INFO] Thread ID: 130459652585024 Generated entry 1: key_1554 -> val_611
+2025-06-26 21:17:56 [INFO] Thread ID: 130459652585024 Generated entry 1: key_1554 -> val_611
+2025-06-26 21:17:56 [INFO] Thread ID: 130459652585024 Generated entry 1: key_1554 -> val_611
+2025-06-26 21:17:56 [INFO] Thread ID: 130459585443392 Generated entry 0: key_1280 -> val_1012
+2025-06-26 21:17:56 [INFO] Thread ID: 130459585443392 Generated entry 0: key_1280 -> val_1012
+2025-06-26 21:17:56 [INFO] Thread ID: 130459585443392 Generated entry 0: key_1280 -> val_1012
+2025-06-26 21:17:56 [INFO] Thread ID: 130459551872576 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459551872576 Generated entry 1: key_3978 -> val_2495
+2025-06-26 21:17:56 [INFO] Thread ID: 130459585443392 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459644192320 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459644192320 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459644192320 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459610621504 Generated entry 1: key_2809 -> val_819
+2025-06-26 21:17:56 [INFO] Thread ID: 130459610621504 Generated entry 1: key_2809 -> val_819
+2025-06-26 21:17:56 [INFO] Thread ID: 130459585443392 Generated entry 1: key_534 -> val_932
+2025-06-26 21:17:56 [INFO] Thread ID: 130459568657984 Generating key from pool of size: 4000
+2025-06-26 21:17:56 [INFO] Thread ID: 130459568657984 Generated entry 1: key_1333 -> val_354
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:56 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:17:57 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:17:57 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:18:00 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:18:01 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:18:02 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:18:03 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:18:04 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generated entry 0: key_1980 -> val_1647
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generated entry 1: key_1962 -> val_314
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:19:07 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:19:07 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generated entry 0: key_582 -> val_510033337709505770
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generated entry 1: key_2430 -> val_5011746488582026485
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generated entry 0: key_351 -> val_3513
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539366496064 Generated entry 1: key_28 -> val_886
+2025-06-26 21:19:07 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] numThreads: 31
+2025-06-26 21:19:07 [INFO] Thread ID: 135539325908544 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539325908544 Generated entry 0: key_307 -> val_334
+2025-06-26 21:19:07 [INFO] Thread ID: 135539325908544 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539325908544 Generated entry 1: key_2951 -> val_3421
+2025-06-26 21:19:07 [INFO] Thread ID: 135539334301248 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539334301248 Generated entry 0: key_2947 -> val_513
+2025-06-26 21:19:07 [INFO] Thread ID: 135539334301248 Generated entry 0: key_2947 -> val_513
+2025-06-26 21:19:07 [INFO] Thread ID: 135539334301248 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539359479360 Generated entry 0: key_3790 -> val_764
+2025-06-26 21:19:07 [INFO] Thread ID: 135539334301248 Generated entry 1: key_685 -> val_1231
+2025-06-26 21:19:07 [INFO] Thread ID: 135539359479360 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539359479360 Generated entry 1: key_3241 -> val_929
+2025-06-26 21:19:07 [INFO] Thread ID: 135539317515840 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539342693952 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539258766912 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539258766912 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539342693952 Generated entry 0: key_1200 -> val_1853
+2025-06-26 21:19:07 [INFO] Thread ID: 135539225196096 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539225196096 Generated entry 1: key_475 -> val_2601
+2025-06-26 21:19:07 [INFO] Thread ID: 135539225196096 Generated entry 1: key_475 -> val_2601
+2025-06-26 21:19:07 [INFO] Thread ID: 135539342693952 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539342693952 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539283945024 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539309123136 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539309123136 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539309123136 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539309123136 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539351086656 Generated entry 0: key_512 -> val_2727
+2025-06-26 21:19:07 [INFO] Thread ID: 135539351086656 Generated entry 0: key_512 -> val_2727
+2025-06-26 21:19:07 [INFO] Thread ID: 135539309123136 Generated entry 1: key_846 -> val_1845
+2025-06-26 21:19:07 [INFO] Thread ID: 135539351086656 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539317515840 Generated entry 1: key_1679 -> val_827
+2025-06-26 21:19:07 [INFO] Thread ID: 135539317515840 Generated entry 1: key_1679 -> val_827
+2025-06-26 21:19:07 [INFO] Thread ID: 135539300730432 Generated entry 0: key_1028 -> val_256
+2025-06-26 21:19:07 [INFO] Thread ID: 135539300730432 Generated entry 0: key_1028 -> val_256
+2025-06-26 21:19:07 [INFO] Thread ID: 135539300730432 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539300730432 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539300730432 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539258766912 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539258766912 Generating key from pool of size: 4000
+2025-06-26 21:19:07 [INFO] Thread ID: 135539258766912 Generated entry 1: key_65 -> val_3583
+2025-06-26 21:19:07 [INFO] Thread ID: 135539258766912 Generated entry 1: key_65 -> val_3583
+2025-06-26 21:19:07 [INFO] Thread ID: 135539351086656 Generated entry 1: key_3039 -> val_583
+2025-06-26 21:19:07 [INFO] Thread ID: 135539351086656 Generated entry 1: key_3039 -> val_583
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:07 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:09 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:09 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:09 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:10 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:10 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:19:11 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:14 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:15 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:19:16 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generated entry 0: key_1824 -> val_620
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generated entry 1: key_2483 -> val_2543
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:21:49 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:21:49 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generated entry 0: key_2665 -> val_6498725372616010933
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generated entry 1: key_3485 -> val_17891498384245275378
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generated entry 0: key_2989 -> val_1418
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651954308928 Generated entry 1: key_3099 -> val_513
+2025-06-26 21:21:49 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] numThreads: 31
+2025-06-26 21:21:49 [INFO] Thread ID: 134651947513408 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651930728000 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651947513408 Generated entry 0: key_3693 -> val_1875
+2025-06-26 21:21:49 [INFO] Thread ID: 134651930728000 Generated entry 0: key_1713 -> val_2254
+2025-06-26 21:21:49 [INFO] Thread ID: 134651947513408 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651930728000 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651930728000 Generated entry 1: key_2179 -> val_2129
+2025-06-26 21:21:49 [INFO] Thread ID: 134651888764480 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651888764480 Generated entry 0: key_1120 -> val_2367
+2025-06-26 21:21:49 [INFO] Thread ID: 134651888764480 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651888764480 Generated entry 1: key_1882 -> val_2433
+2025-06-26 21:21:49 [INFO] Thread ID: 134651888764480 Generated entry 1: key_1882 -> val_2433
+2025-06-26 21:21:49 [INFO] Thread ID: 134651880371776 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651838408256 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651838408256 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651838408256 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651838408256 Generated entry 0: key_713 -> val_3412
+2025-06-26 21:21:49 [INFO] Thread ID: 134651897157184 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651838408256 Generated entry 1: key_1313 -> val_3209
+2025-06-26 21:21:49 [INFO] Thread ID: 134651838408256 Generated entry 1: key_1313 -> val_3209
+2025-06-26 21:21:49 [INFO] Thread ID: 134651922335296 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651922335296 Generated entry 1: key_1665 -> val_2505
+2025-06-26 21:21:49 [INFO] Thread ID: 134651913942592 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651913942592 Generated entry 0: key_2546 -> val_3797
+2025-06-26 21:21:49 [INFO] Thread ID: 134651913942592 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651913942592 Generated entry 1: key_2824 -> val_2462
+2025-06-26 21:21:49 [INFO] Thread ID: 134651913942592 Generated entry 1: key_2824 -> val_2462
+2025-06-26 21:21:49 [INFO] Thread ID: 134651905549888 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651905549888 Generated entry 0: key_985 -> val_2135
+2025-06-26 21:21:49 [INFO] Thread ID: 134651905549888 Generated entry 0: key_985 -> val_2135
+2025-06-26 21:21:49 [INFO] Thread ID: 134651855193664 Generated entry 0: key_2238 -> val_915
+2025-06-26 21:21:49 [INFO] Thread ID: 134651855193664 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651855193664 Generated entry 1: key_1879 -> val_2877
+2025-06-26 21:21:49 [INFO] Thread ID: 134651897157184 Generated entry 0: key_3770 -> val_2489
+2025-06-26 21:21:49 [INFO] Thread ID: 134651897157184 Generated entry 0: key_3770 -> val_2489
+2025-06-26 21:21:49 [INFO] Thread ID: 134651897157184 Generated entry 0: key_3770 -> val_2489
+2025-06-26 21:21:49 [INFO] Thread ID: 134651897157184 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651897157184 Generated entry 1: key_3858 -> val_3459
+2025-06-26 21:21:49 [INFO] Thread ID: 134651905549888 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651905549888 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651905549888 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651905549888 Generated entry 1: key_3983 -> val_3221
+2025-06-26 21:21:49 [INFO] Thread ID: 134651939120704 Generating key from pool of size: 4000
+2025-06-26 21:21:49 [INFO] Thread ID: 134651939120704 Generated entry 1: key_2872 -> val_1422
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:49 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:50 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:50 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:21:51 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:52 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:53 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:54 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:21:55 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generated entry 0: key_2746 -> val_241
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generated entry 1: key_779 -> val_630
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:22:28 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:22:28 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generated entry 0: key_1794 -> val_11476985159052633179
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generated entry 1: key_1866 -> val_5463203635032157172
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generated entry 0: key_3408 -> val_2289
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129855015081792 Generated entry 1: key_1976 -> val_1169
+2025-06-26 21:22:28 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:22:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:22:28 [INFO] numThreads: 31
+2025-06-26 21:22:28 [INFO] Thread ID: 129854999619136 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854999619136 Generated entry 0: key_1464 -> val_367
+2025-06-26 21:22:28 [INFO] Thread ID: 129854991226432 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854999619136 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854991226432 Generated entry 0: key_1286 -> val_2718
+2025-06-26 21:22:28 [INFO] Thread ID: 129854982833728 Generated entry 0: key_2047 -> val_87
+2025-06-26 21:22:28 [INFO] Thread ID: 129854898906688 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854898906688 Generated entry 0: key_72 -> val_174
+2025-06-26 21:22:28 [INFO] Thread ID: 129854898906688 Generated entry 0: key_72 -> val_174
+2025-06-26 21:22:28 [INFO] Thread ID: 129854915692096 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854898906688 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854898906688 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854957655616 Generated entry 0: key_3766 -> val_3451
+2025-06-26 21:22:28 [INFO] Thread ID: 129854957655616 Generated entry 0: key_3766 -> val_3451
+2025-06-26 21:22:28 [INFO] Thread ID: 129854966048320 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854966048320 Generated entry 0: key_3693 -> val_2239
+2025-06-26 21:22:28 [INFO] Thread ID: 129854966048320 Generated entry 0: key_3693 -> val_2239
+2025-06-26 21:22:28 [INFO] Thread ID: 129854991226432 Generated entry 1: key_2489 -> val_2963
+2025-06-26 21:22:28 [INFO] Thread ID: 129854932477504 Generated entry 0: key_2325 -> val_1496
+2025-06-26 21:22:28 [INFO] Thread ID: 129854932477504 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854966048320 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854966048320 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854974441024 Generated entry 0: key_2755 -> val_2874
+2025-06-26 21:22:28 [INFO] Thread ID: 129854974441024 Generated entry 0: key_2755 -> val_2874
+2025-06-26 21:22:28 [INFO] Thread ID: 129854932477504 Generated entry 1: key_3063 -> val_3417
+2025-06-26 21:22:28 [INFO] Thread ID: 129854932477504 Generated entry 1: key_3063 -> val_3417
+2025-06-26 21:22:28 [INFO] Thread ID: 129854957655616 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854957655616 Generated entry 1: key_1005 -> val_1012
+2025-06-26 21:22:28 [INFO] Thread ID: 129854957655616 Generated entry 1: key_1005 -> val_1012
+2025-06-26 21:22:28 [INFO] Thread ID: 129854949262912 Generated entry 0: key_2697 -> val_2690
+2025-06-26 21:22:28 [INFO] Thread ID: 129854974441024 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854974441024 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854974441024 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854974441024 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854974441024 Generated entry 1: key_891 -> val_408
+2025-06-26 21:22:28 [INFO] Thread ID: 129854915692096 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854915692096 Generated entry 1: key_2536 -> val_630
+2025-06-26 21:22:28 [INFO] Thread ID: 129854915692096 Generated entry 1: key_2536 -> val_630
+2025-06-26 21:22:28 [INFO] Thread ID: 129854915692096 Generated entry 1: key_2536 -> val_630
+2025-06-26 21:22:28 [INFO] Thread ID: 129854915692096 Generated entry 1: key_2536 -> val_630
+2025-06-26 21:22:28 [INFO] Thread ID: 129854949262912 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854949262912 Generated entry 1: key_1114 -> val_3337
+2025-06-26 21:22:28 [INFO] Thread ID: 129854907299392 Generating key from pool of size: 4000
+2025-06-26 21:22:28 [INFO] Thread ID: 129854907299392 Generated entry 1: key_2044 -> val_707
+2025-06-26 21:26:14 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:26:14 [INFO] Thread ID: 132909422241600 Generating key from pool of size: 4000
+2025-06-26 21:36:39 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:36:39 [INFO] Thread ID: 131628005902144 Generating key from pool of size: 4000
+2025-06-26 21:39:28 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:39:28 [INFO] Thread ID: 127344545433408 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generated entry 0: key_2876 -> val_682
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generated entry 1: key_2842 -> val_3572
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:40:20 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:40:20 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generated entry 0: key_3771 -> val_4373891454544850899
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generated entry 1: key_3450 -> val_3734761971604086686
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generated entry 0: key_1141 -> val_2309
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937407207232 Generated entry 1: key_480 -> val_1405
+2025-06-26 21:40:20 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:40:20 [INFO] numThreads: 31
+2025-06-26 21:40:20 [INFO] Thread ID: 132937399924288 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937324389952 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937399924288 Generated entry 0: key_2707 -> val_3691
+2025-06-26 21:40:20 [INFO] Thread ID: 132937399924288 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937324389952 Generated entry 0: key_2622 -> val_2410
+2025-06-26 21:40:20 [INFO] Thread ID: 132937341175360 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937332782656 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937290819136 Generated entry 0: key_2567 -> val_2255
+2025-06-26 21:40:20 [INFO] Thread ID: 132937290819136 Generated entry 0: key_2567 -> val_2255
+2025-06-26 21:40:20 [INFO] Thread ID: 132937290819136 Generated entry 0: key_2567 -> val_2255
+2025-06-26 21:40:20 [INFO] Thread ID: 132937290819136 Generated entry 0: key_2567 -> val_2255
+2025-06-26 21:40:20 [INFO] Thread ID: 132937290819136 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937290819136 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937366353472 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937341175360 Generated entry 1: key_3580 -> val_3734
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937357960768 Generated entry 0: key_2094 -> val_2800
+2025-06-26 21:40:20 [INFO] Thread ID: 132937357960768 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937357960768 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937357960768 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generated entry 0: key_2581 -> val_1405
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937366353472 Generated entry 0: key_2995 -> val_1064
+2025-06-26 21:40:20 [INFO] Thread ID: 132937366353472 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937366353472 Generated entry 1: key_2452 -> val_350
+2025-06-26 21:40:20 [INFO] Thread ID: 132937366353472 Generated entry 1: key_2452 -> val_350
+2025-06-26 21:40:20 [INFO] Thread ID: 132937366353472 Generated entry 1: key_2452 -> val_350
+2025-06-26 21:40:20 [INFO] Thread ID: 132937332782656 Generated entry 1: key_1012 -> val_3938
+2025-06-26 21:40:20 [INFO] Thread ID: 132937391531584 Generated entry 0: key_792 -> val_1357
+2025-06-26 21:40:20 [INFO] Thread ID: 132937391531584 Generated entry 0: key_792 -> val_1357
+2025-06-26 21:40:20 [INFO] Thread ID: 132937391531584 Generated entry 0: key_792 -> val_1357
+2025-06-26 21:40:20 [INFO] Thread ID: 132937391531584 Generated entry 0: key_792 -> val_1357
+2025-06-26 21:40:20 [INFO] Thread ID: 132937315997248 Generated entry 0: key_3853 -> val_1335
+2025-06-26 21:40:20 [INFO] Thread ID: 132937315997248 Generating key from pool of size: 4000
+2025-06-26 21:40:20 [INFO] Thread ID: 132937315997248 Generated entry 1: key_2289 -> val_1519
+2025-06-26 21:40:20 [INFO] Thread ID: 132937315997248 Generated entry 1: key_2289 -> val_1519
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generated entry 1: key_645 -> val_3636
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generated entry 1: key_645 -> val_3636
+2025-06-26 21:40:20 [INFO] Thread ID: 132937383138880 Generated entry 1: key_645 -> val_3636
+2025-06-26 21:40:20 [INFO] Thread ID: 132937391531584 Generated entry 1: key_3364 -> val_198
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:20 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:21 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:21 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:22 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generated entry 0: key_121 -> val_3977
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generated entry 1: key_2105 -> val_3829
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:40:52 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:40:52 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generated entry 0: key_3290 -> val_9932714620544820136
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generated entry 1: key_1724 -> val_11994530866817966068
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generated entry 0: key_2613 -> val_1614
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931559606080 Generated entry 1: key_2017 -> val_3071
+2025-06-26 21:40:52 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:40:52 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:40:52 [INFO] numThreads: 31
+2025-06-26 21:40:52 [INFO] Thread ID: 126931552958016 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931510994496 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931552958016 Generated entry 0: key_3745 -> val_2018
+2025-06-26 21:40:52 [INFO] Thread ID: 126931510994496 Generated entry 0: key_2832 -> val_211
+2025-06-26 21:40:52 [INFO] Thread ID: 126931519387200 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931519387200 Generated entry 0: key_1657 -> val_2946
+2025-06-26 21:40:52 [INFO] Thread ID: 126931519387200 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931519387200 Generated entry 1: key_3410 -> val_2916
+2025-06-26 21:40:52 [INFO] Thread ID: 126931469030976 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931552958016 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931527779904 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931527779904 Generated entry 0: key_1547 -> val_3731
+2025-06-26 21:40:52 [INFO] Thread ID: 126931527779904 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931527779904 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931494209088 Generated entry 0: key_1194 -> val_2339
+2025-06-26 21:40:52 [INFO] Thread ID: 126931494209088 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931494209088 Generated entry 1: key_2105 -> val_2198
+2025-06-26 21:40:52 [INFO] Thread ID: 126931494209088 Generated entry 1: key_2105 -> val_2198
+2025-06-26 21:40:52 [INFO] Thread ID: 126931494209088 Generated entry 1: key_2105 -> val_2198
+2025-06-26 21:40:52 [INFO] Thread ID: 126931502601792 Generated entry 0: key_3948 -> val_3119
+2025-06-26 21:40:52 [INFO] Thread ID: 126931502601792 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931502601792 Generated entry 1: key_751 -> val_3612
+2025-06-26 21:40:52 [INFO] Thread ID: 126931510994496 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931510994496 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931485816384 Generated entry 0: key_952 -> val_1723
+2025-06-26 21:40:52 [INFO] Thread ID: 126931485816384 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931510994496 Generated entry 1: key_1110 -> val_1475
+2025-06-26 21:40:52 [INFO] Thread ID: 126931510994496 Generated entry 1: key_1110 -> val_1475
+2025-06-26 21:40:52 [INFO] Thread ID: 126931469030976 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931469030976 Generated entry 1: key_1383 -> val_3962
+2025-06-26 21:40:52 [INFO] Thread ID: 126931469030976 Generated entry 1: key_1383 -> val_3962
+2025-06-26 21:40:52 [INFO] Thread ID: 126931485816384 Generated entry 1: key_1068 -> val_3111
+2025-06-26 21:40:52 [INFO] Thread ID: 126931485816384 Generated entry 1: key_1068 -> val_3111
+2025-06-26 21:40:52 [INFO] Thread ID: 126931477423680 Generated entry 0: key_1743 -> val_429
+2025-06-26 21:40:52 [INFO] Thread ID: 126931477423680 Generated entry 0: key_1743 -> val_429
+2025-06-26 21:40:52 [INFO] Thread ID: 126931477423680 Generated entry 0: key_1743 -> val_429
+2025-06-26 21:40:52 [INFO] Thread ID: 126931544565312 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931544565312 Generated entry 1: key_3024 -> val_3985
+2025-06-26 21:40:52 [INFO] Thread ID: 126931544565312 Generated entry 1: key_3024 -> val_3985
+2025-06-26 21:40:52 [INFO] Thread ID: 126931536172608 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931477423680 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931477423680 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931477423680 Generating key from pool of size: 4000
+2025-06-26 21:40:52 [INFO] Thread ID: 126931477423680 Generated entry 1: key_322 -> val_1336
+2025-06-26 21:43:02 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:43:02 [INFO] Thread ID: 133223093196608 Generating key from pool of size: 4000
+2025-06-26 21:45:12 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:46:15 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:46:57 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:12 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:12 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:12 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:12 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:12 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:12 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:12 [INFO] Thread ID: 138251518424896 Generated entry 0: key_493 -> val_2019
+2025-06-26 21:50:12 [INFO] Thread ID: 138251518424896 Generated entry 1: key_1523 -> val_1344
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:50:13 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Thread ID: 138251518424896 Generated entry 0: key_42858 -> val_11748040665769973134
+2025-06-26 21:50:13 [INFO] Thread ID: 138251518424896 Generated entry 1: key_33201 -> val_11493217482934334143
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Thread ID: 138251518424896 Generated entry 0: key_3289 -> val_2693
+2025-06-26 21:50:13 [INFO] Thread ID: 138251518424896 Generated entry 1: key_2615 -> val_3073
+2025-06-26 21:50:13 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:50:13 [INFO] numThreads: 31
+2025-06-26 21:50:13 [INFO] Thread ID: 138251495003712 Generated entry 0: key_2268 -> val_2480
+2025-06-26 21:50:13 [INFO] Thread ID: 138251495003712 Generated entry 1: key_1360 -> val_2268
+2025-06-26 21:50:13 [INFO] Thread ID: 138251427862080 Generated entry 0: key_3535 -> val_1601
+2025-06-26 21:50:13 [INFO] Thread ID: 138251427862080 Generated entry 1: key_2016 -> val_80
+2025-06-26 21:50:13 [INFO] Thread ID: 138251478218304 Generated entry 0: key_659 -> val_2497
+2025-06-26 21:50:13 [INFO] Thread ID: 138251478218304 Generated entry 1: key_848 -> val_2272
+2025-06-26 21:50:13 [INFO] Thread ID: 138251486611008 Generated entry 0: key_390 -> val_1178
+2025-06-26 21:50:13 [INFO] Thread ID: 138251486611008 Generated entry 1: key_2716 -> val_3906
+2025-06-26 21:50:13 [INFO] Thread ID: 138251444647488 Generated entry 0: key_3743 -> val_3104
+2025-06-26 21:50:13 [INFO] Thread ID: 138251444647488 Generated entry 1: key_2480 -> val_769
+2025-06-26 21:50:13 [INFO] Thread ID: 138251385898560 Generated entry 0: key_3067 -> val_1192
+2025-06-26 21:50:13 [INFO] Thread ID: 138251385898560 Generated entry 1: key_890 -> val_2736
+2025-06-26 21:50:13 [INFO] Thread ID: 138251377505856 Generated entry 0: key_1935 -> val_3695
+2025-06-26 21:50:13 [INFO] Thread ID: 138251377505856 Generated entry 0: key_1935 -> val_3695
+2025-06-26 21:50:13 [INFO] Thread ID: 138251377505856 Generated entry 1: key_1565 -> val_2142
+2025-06-26 21:50:13 [INFO] Thread ID: 138251402683968 Generated entry 0: key_2341 -> val_2753
+2025-06-26 21:50:13 [INFO] Thread ID: 138251402683968 Generated entry 0: key_2341 -> val_2753
+2025-06-26 21:50:13 [INFO] Thread ID: 138251469825600 Generated entry 1: key_356 -> val_138
+2025-06-26 21:50:13 [INFO] Thread ID: 138251369113152 Generated entry 1: key_2031 -> val_3782
+2025-06-26 21:50:13 [INFO] Thread ID: 138251511789120 Generated entry 0: key_241 -> val_434
+2025-06-26 21:50:13 [INFO] Thread ID: 138251402683968 Generated entry 1: key_544 -> val_2100
+2025-06-26 21:50:13 [INFO] Thread ID: 138251511789120 Generated entry 1: key_2942 -> val_2816
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:13 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:14 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:14 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:14 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:14 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:14 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:14 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:14 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:50:14 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generated entry 0: key_490 -> val_3212
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generated entry 1: key_3886 -> val_2568
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [WARNING] No data generated for file, skipping write.
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [ERROR] Max file size and approx entry size must be greater than zero.
+2025-06-26 21:51:23 [ERROR] Failed to load configuration from test_zeroapp_config.json
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [ERROR] Key pool is unexpectedly empty
+2025-06-26 21:51:23 [ERROR] Failed to generate key: Key pool is unexpectedly empty
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generated entry 18446744073709551615:  -> 
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generating key from pool of size: 124000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generated entry 0: key_82262 -> val_5132353601081147250
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generating key from pool of size: 124000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generated entry 1: key_120168 -> val_1136343304418424258
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generated entry 0: key_2174 -> val_2365
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818318427968 Generated entry 1: key_3193 -> val_3312
+2025-06-26 21:51:23 [ERROR] File write error : -ERR Invalid size parameter for 'output/data_1.json'
+
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Total data size: 1.024000 MB, Total files to generate: 10.240000, Remainder: 0.024000 MB.
+2025-06-26 21:51:23 [INFO] numThreads: 31
+2025-06-26 21:51:23 [INFO] Thread ID: 130818311714368 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818311714368 Generated entry 0: key_2010 -> val_2787
+2025-06-26 21:51:23 [INFO] Thread ID: 130818311714368 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818294928960 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818294928960 Generated entry 0: key_1782 -> val_1382
+2025-06-26 21:51:23 [INFO] Thread ID: 130818294928960 Generated entry 0: key_1782 -> val_1382
+2025-06-26 21:51:23 [INFO] Thread ID: 130818278143552 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818278143552 Generated entry 0: key_2122 -> val_2757
+2025-06-26 21:51:23 [INFO] Thread ID: 130818294928960 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818294928960 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818269750848 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818244572736 Generated entry 0: key_3292 -> val_1388
+2025-06-26 21:51:23 [INFO] Thread ID: 130818244572736 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818244572736 Generated entry 1: key_2310 -> val_1085
+2025-06-26 21:51:23 [INFO] Thread ID: 130818278143552 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818303321664 Generated entry 0: key_3555 -> val_2768
+2025-06-26 21:51:23 [INFO] Thread ID: 130818286536256 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818269750848 Generated entry 0: key_3239 -> val_3653
+2025-06-26 21:51:23 [INFO] Thread ID: 130818269750848 Generated entry 0: key_3239 -> val_3653
+2025-06-26 21:51:23 [INFO] Thread ID: 130818194216512 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818194216512 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818194216512 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818194216512 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818286536256 Generated entry 0: key_1911 -> val_1891
+2025-06-26 21:51:23 [INFO] Thread ID: 130818286536256 Generated entry 0: key_1911 -> val_1891
+2025-06-26 21:51:23 [INFO] Thread ID: 130818286536256 Generated entry 0: key_1911 -> val_1891
+2025-06-26 21:51:23 [INFO] Thread ID: 130818286536256 Generated entry 0: key_1911 -> val_1891
+2025-06-26 21:51:23 [INFO] Thread ID: 130818269750848 Generated entry 1: key_2589 -> val_3660
+2025-06-26 21:51:23 [INFO] Thread ID: 130818269750848 Generated entry 1: key_2589 -> val_3660
+2025-06-26 21:51:23 [INFO] Thread ID: 130818303321664 Generated entry 1: key_623 -> val_337
+2025-06-26 21:51:23 [INFO] Thread ID: 130818303321664 Generated entry 1: key_623 -> val_337
+2025-06-26 21:51:23 [INFO] Thread ID: 130818303321664 Generated entry 1: key_623 -> val_337
+2025-06-26 21:51:23 [INFO] Thread ID: 130818194216512 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818194216512 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818261358144 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818194216512 Generated entry 1: key_796 -> val_3118
+2025-06-26 21:51:23 [INFO] Thread ID: 130818194216512 Generated entry 1: key_796 -> val_3118
+2025-06-26 21:51:23 [INFO] Thread ID: 130818252965440 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818252965440 Generated entry 1: key_1424 -> val_2082
+2025-06-26 21:51:23 [INFO] Thread ID: 130818252965440 Generated entry 1: key_1424 -> val_2082
+2025-06-26 21:51:23 [INFO] Thread ID: 130818252965440 Generated entry 1: key_1424 -> val_2082
+2025-06-26 21:51:23 [INFO] Thread ID: 130818286536256 Generated entry 1: key_148 -> val_499
+2025-06-26 21:51:23 [INFO] Thread ID: 130818219394624 Generating key from pool of size: 4000
+2025-06-26 21:51:23 [INFO] Thread ID: 130818219394624 Generated entry 1: key_3447 -> val_3739
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool initialized with size: 4000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:23 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
+2025-06-26 21:51:24 [INFO] Key pool rebuilt with size: 124000
