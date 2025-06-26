@@ -54,6 +54,7 @@ public:
 
     // 获取当前键池用于测试
     std::vector<std::string> &getKeyPool();
+    size_t getNumThreads() const { return numThreads_; }
     void setFileManager(const std::shared_ptr<FileManagerBase> &fileManager) { fileManager_ = std::move(fileManager); }
 
 private:

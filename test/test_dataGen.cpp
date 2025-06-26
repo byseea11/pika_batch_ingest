@@ -175,3 +175,18 @@ TEST_F(DataGenTest, GenerateDataSplitFiles)
     EXPECT_EQ(gen->generateData().getRet(), Result::Ret::kOk);
     std::filesystem::remove("test_split_config.json");
 }
+
+TEST(DataGenTest, ConcurrentRebuildKeyPool)
+{
+    DataGen gen("test_config.json", "test_output");
+    const int threadCount = 10;
+    std::vector<std::thread> threads;
+    for (int i = 0; i < threadCount; ++i)
+    {
+        threads.emplace_back([&gen]
+                             { gen.rebuildKeyPool(); });
+    }
+    for (auto &t : threads)
+        t.join();
+    EXPECT_EQ(gen.getKeyPool().size(), gen.getNumThreads() * gen.getKeyPool().size());
+}
