@@ -8,8 +8,9 @@
 #include "utils/dataGen.h"
 #include "utils/result.h"
 #include <nlohmann/json.hpp>
+#include <iomanip>
 /**
- *  ./bingest -n 1G -r 8 -d "kvdict"
+ *  ./mock.sh -n 1G -d "kvdict"
  */
 
 static const std::string configFile = "uconfig.json";
@@ -27,6 +28,16 @@ static void loadConfig(const std::string &filePath)
 }
 
 static json config = getConfig();
+
+double strToDouble(const std::string &s)
+{
+    std::istringstream iss(s);
+    double value;
+    iss >> value; // 自动处理科学计数法
+    if (iss.fail())
+        throw std::invalid_argument("Invalid number");
+    return value;
+}
 
 class MockCmd
 {
@@ -83,7 +94,7 @@ public:
             switch (opt)
             {
             case 'n':
-                targetSizeGB = std::stoul(parseSize(optarg).message_raw()); // 解析 -n 后的值
+                targetSizeGB = strToDouble(parseSize(optarg).message_raw()); // 解析 -n 后的值
                 break;
             case 'd':
                 directory = optarg; // 解析 -d 后的值
@@ -103,6 +114,7 @@ private:
     {
         size_t size = 0;
         std::string str(sizeStr);
+        LOG_INFO("Parsing target size: " + str);
         char unit = str.back(); // 获取最后的单位字符（G 或 M）
 
         // 去掉最后的字符（单位）
@@ -110,12 +122,14 @@ private:
 
         try
         {
-            size = std::stoul(str); // 将剩下的部分转换为数字
+            size = strToDouble(str); // 将剩下的部分转换为数字
         }
         catch (const std::exception &e)
         {
             return Result(Result::kError, "Invalid size format: " + std::string(sizeStr));
         }
+
+        LOG_INFO("Parsed size: " + std::to_string(size) + " with unit: " + unit);
 
         if (unit == 'G')
         {
@@ -141,6 +155,7 @@ int main(int argc, char **argv)
         LOG_ERROR("Failed to parse command line arguments: " + res.message());
         return 1;
     }
+
     LOG_INFO("Target size: " + std::to_string(cmd.targetSizeGB) + "G");
     LOG_INFO("Directory: " + cmd.directory);
 

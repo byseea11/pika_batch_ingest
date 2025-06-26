@@ -10,9 +10,7 @@
 #include <mutex>
 
 #ifndef PROJECT_DIR
-#error "PROJECT_DIR macro is not defined! Check CMake configuration."
 #else
-#pragma message("PROJECT_DIR value: " PROJECT_DIR)
 #endif
 
 using DataType = std::vector<std::unordered_map<std::string, std::string>>;
