@@ -6,14 +6,76 @@
 #include <stdexcept>
 #include "utils/klog.h"
 #include "utils/dataGen.h"
+#include "utils/result.h"
+#include <nlohmann/json.hpp>
+/**
+ *  ./bingest -n 1G -r 8 -d "kvdict"
+ */
+
+static const std::string configFile = "uconfig.json";
+
+static json &getConfig()
+{
+    static json instance; // C++11保证线程安全的初始化
+    return instance;
+}
+
+static void loadConfig(const std::string &filePath)
+{
+    std::ifstream file(filePath); // 避免变量名冲突
+    file >> getConfig();          // 通过函数访问静态变量
+}
+
+static json config = getConfig();
 
 class MockCmd
 {
 public:
-    size_t targetSizeGB = 1;          // 默认值是 1G
-    std::string directory = "kvdata"; // 默认目录是 "kvdata"
+    std::string directory = "kvdict"; // 默认目录是 "kvdict"
+    std::string keyPrefix = "key_";
+    std::string valuePrefix = "value_";
+    double maxFileSizeMB = 10;
+    double maxSizeGB = 10;
+    double targetSizeGB = 0.01;
+    double approxEntrySizeKB = 50;
 
-    void parse(int argc, char **argv)
+    MockCmd()
+    {
+        // 加载配置文件
+        try
+        {
+            if (config.contains("targetSizeGB"))
+            {
+                targetSizeGB = config["targetSizeGB"].get<double>();
+            }
+            if (config.contains("keyPrefix"))
+            {
+                keyPrefix = config["keyPrefix"].get<std::string>();
+            }
+            if (config.contains("valuePrefix"))
+            {
+                valuePrefix = config["valuePrefix"].get<std::string>();
+            }
+            if (config.contains("maxFileSizeMB"))
+            {
+                maxFileSizeMB = config["maxFileSizeMB"].get<double>();
+            }
+            if (config.contains("maxSizeGB"))
+            {
+                maxSizeGB = config["maxSizeGB"].get<double>();
+            }
+            if (config.contains("approxEntrySizeKB"))
+            {
+                approxEntrySizeKB = config["approxEntrySizeKB"].get<double>();
+            }
+        }
+        catch (const std::exception &e)
+        {
+            LOG_ERROR("Failed to load configuration: " + std::string(e.what()));
+        }
+    }
+
+    Result parse(int argc, char **argv)
     {
         int opt;
         while ((opt = getopt(argc, argv, "n:d:")) != -1)
@@ -21,20 +83,23 @@ public:
             switch (opt)
             {
             case 'n':
-                targetSizeGB = parseSize(optarg); // 解析 -n 后的值
+                targetSizeGB = std::stoul(parseSize(optarg).message_raw()); // 解析 -n 后的值
                 break;
             case 'd':
                 directory = optarg; // 解析 -d 后的值
                 break;
             default:
-                throw std::invalid_argument("Invalid option");
+                std::cout << "Usage: ./mock -n <size> -d <directory>\n";
+                std::cout << "Example: ./mock -n 1G -d kvdict\n";
+                return Result(Result::kError, "Invalid option");
             }
         }
+        return Result(Result::kOk, "Parsed successfully");
     }
 
 private:
     // 解析像 10G 这种带有单位的大小参数
-    size_t parseSize(const char *sizeStr)
+    Result parseSize(const char *sizeStr)
     {
         size_t size = 0;
         std::string str(sizeStr);
@@ -49,20 +114,20 @@ private:
         }
         catch (const std::exception &e)
         {
-            throw std::invalid_argument("Invalid size format");
+            return Result(Result::kError, "Invalid size format: " + std::string(sizeStr));
         }
 
         if (unit == 'G')
         {
-            return size; // 以 GB 为单位
+            return Result(Result::kOk, std::to_string(size)); // 以 GB 为单位
         }
         else if (unit == 'M')
         {
-            return size / 1024; // 将 MB 转换为 GB
+            return Result(Result::kOk, std::to_string(size / 1024)); // 将 MB 转换为 GB
         }
         else
         {
-            throw std::invalid_argument("Invalid size unit, only 'G' or 'M' are supported");
+            return Result(Result::kError, "Invalid size unit, only 'G' or 'M' are supported");
         }
     }
 };
@@ -70,60 +135,51 @@ private:
 int main(int argc, char **argv)
 {
     MockCmd cmd;
-    try
+    Result res = cmd.parse(argc, argv);
+    if (res.isError())
     {
-        cmd.parse(argc, argv);
-        LOG_INFO("Target size: " + std::to_string(cmd.targetSizeGB) + "G");
-        LOG_INFO("Directory: " + cmd.directory);
-    }
-    catch (const std::exception &e)
-    {
-        LOG_ERROR("Error parsing arguments: " + std::string(e.what()));
+        LOG_ERROR("Failed to parse command line arguments: " + res.message());
         return 1;
     }
+    LOG_INFO("Target size: " + std::to_string(cmd.targetSizeGB) + "G");
+    LOG_INFO("Directory: " + cmd.directory);
 
     try
     {
-        // 检查并创建目录
-        if (!std::filesystem::exists(cmd.directory))
-        {
-            std::filesystem::create_directories(cmd.directory);
-            LOG_INFO("Created directory: " + cmd.directory);
-        }
-
-        // 构造配置文件路径
-        std::string configFile = "uconfig.json";
-
-        // 将命令行参数写入配置文件（如果你希望动态生成配置）
         std::ofstream ofs(configFile);
-        if (ofs.is_open())
+        if (!ofs.is_open())
         {
-            ofs << R"({
-                "keyPrefix": "key_",
-                "valuePrefix": "value_",
-                "maxFileSizeMB": 256,
-                "targetSizeGB": )"
-                << cmd.targetSizeGB << R"(,
-                "maxSizeGB": 100,
-                "approxEntrySizeKB": 50
-            })";
-            ofs.close();
-            LOG_INFO("Wrote config to " + configFile);
+            LOG_ERROR("Failed to open config file: " + configFile);
+            return -1;
         }
-        else
+
+        nlohmann::json config = {
+            {"keyPrefix", cmd.keyPrefix},
+            {"valuePrefix", cmd.valuePrefix},
+            {"maxFileSizeMB", cmd.maxFileSizeMB},
+            {"maxSizeGB", cmd.maxSizeGB},
+            {"targetSizeGB", cmd.targetSizeGB},
+            {"approxEntrySizeKB", cmd.approxEntrySizeKB}};
+
+        ofs << config.dump(4); // 格式化输出
+        ofs.close();
+
+        if (!ofs)
         {
-            LOG_ERROR("Failed to write configuration file.");
-            return 1;
+            LOG_ERROR("Write failed");
+            return -1;
         }
+        LOG_INFO("Wrote config to " + configFile);
 
         // 构造并启动数据生成器
         DataGen generator(configFile, cmd.directory);
+        LOG_INFO("Starting data generation...");
         generator.generateData();
     }
     catch (const std::exception &e)
     {
         LOG_ERROR("Data generation failed: " + std::string(e.what()));
-        return 1;
+        return -1;
     }
 
     return 0;
