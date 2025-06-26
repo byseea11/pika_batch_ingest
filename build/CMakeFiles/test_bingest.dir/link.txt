@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/test_bingest.dir/test/main.cpp.o -o test_bingest  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a 

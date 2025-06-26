@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/bingest.dir/src/mock.cpp.o CMakeFiles/bingest.dir/src/utils/dataGen.cpp.o CMakeFiles/bingest.dir/src/utils/fileManager.cpp.o -o bingest 
