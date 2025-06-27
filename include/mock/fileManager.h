@@ -8,12 +8,16 @@
 #include <vector>
 #include <unordered_map>
 #include <mutex>
+#include <nlohmann/json.hpp>
+using json = nlohmann::json;
 
 #ifndef PROJECT_DIR
 #else
 #endif
 
 using DataType = std::vector<std::unordered_map<std::string, std::string>>;
+
+static const std::filesystem::path DEFAULTDIC = std::filesystem::path(PROJECT_DIR) / "data";
 
 // 创建一个模拟的 FileManager 基类，用于测试
 class FileManagerBase
@@ -30,7 +34,7 @@ public:
     // 构造函数，接受文件路径
     FileManager(const std::string &dic) : distname_index_(0)
     {
-        dic_ = std::filesystem::path(PROJECT_DIR) / "data" / dic; // 使用 PROJECT_DIR 和用户指定的目录拼接路径
+        dic_ = DEFAULTDIC / dic; // 使用 PROJECT_DIR 和用户指定的目录拼接路径
         // 检查目录是否存在，如果不存在则创建
         if (!std::filesystem::exists(dic_))
         {
@@ -63,6 +67,20 @@ private:
     size_t distname_index_;               // 文件名的索引，用于生成唯一的文件名
     std::string fileExtension_ = ".json"; // 文件扩展名
     std::mutex mutex_;                    // 用于文件名分配的互斥锁
+};
+
+class JsonFileManager
+{
+public:
+    json load(const std::string &filePath)
+    {
+        std::ifstream in(filePath);
+        if (!in)
+            throw std::runtime_error("File open failed: " + filePath);
+        json j;
+        in >> j;
+        return j;
+    }
 };
 
 #endif
