@@ -13,4 +13,4 @@ cd build || exit
 cmake ..
 
 # Build the project
-make
+make -j4 && make install
