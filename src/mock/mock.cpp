@@ -5,7 +5,7 @@
 #include <sstream>
 #include <stdexcept>
 #include "utils/klog.h"
-#include "utils/dataGen.h"
+#include "mock/dataGen.h"
 #include "utils/result.h"
 #include <nlohmann/json.hpp>
 #include <iomanip>

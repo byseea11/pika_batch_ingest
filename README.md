@@ -7,7 +7,7 @@
 - [ ] 生成 SST 文件并实现主从复制
   - [x] 模拟数据，覆盖 String 类型
   - [ ] 生成 SST 文件
-  - [ ] 执行 Compaction 操作
+  - [ ] 文件导入到Pika
   - [ ] 上传到共享存储并通知 Pika 服务端
   - [ ] 在 Pika 服务端实现主从复制
 - [ ] 自动化：实现自动化流程
@@ -39,3 +39,5 @@ cd ../../output && ./pika_batch_ingest
 
 实现效果如下
 ![alt text](images/mock.png)
+
+### exchange
