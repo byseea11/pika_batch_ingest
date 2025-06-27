@@ -10,6 +10,7 @@
 #include <vector>
 #include <unordered_map>
 #include "mock/fileManager.h"
+#include "utils/compare.h"
 
 namespace fs = std::filesystem;
 
@@ -22,7 +23,7 @@ std::string thread_id_to_string(std::thread::id id)
 
 // 构造函数，初始化配置
 DataGen::DataGen(const std::string &configFilePath, const std::string &dicPath)
-    : fileManager_(std::make_shared<FileManager>(dicPath)), keyPoolSize_(4000), maxFileSizeMB_(256)
+    : fileManager_(std::make_shared<FileManager>(dicPath)), keyPoolSize_(40000), maxFileSizeMB_(256)
 {
     if (loadConfig(configFilePath).isError())
     {
@@ -113,12 +114,13 @@ Result DataGen::generateFile(size_t fileSize)
 
     for (size_t i = 0; i < numEntries; ++i)
     {
-        std::unordered_map<std::string, std::string> entry;
+        KvEntry entry;
         try
         {
-            entry["key"] = generateKey().message_raw();
-            entry["value"] = valuePrefix_ + std::to_string(dist(gen));
-            data.push_back(entry);
+            entry.key = generateKey().message_raw(); // 你要确保返回的是 string
+            entry.value = valuePrefix_ + std::to_string(dist(gen));
+            entry.timestamp = generateRandomTimestamp();
+            data.emplace_back(entry);
         }
         catch (const std::exception &e)
         {
@@ -126,12 +128,9 @@ Result DataGen::generateFile(size_t fileSize)
             rebuildKeyPool(); // 如果发生异常，重新初始化键池
             --i;              // 重试当前条目
         }
-        LOG_INFO("Thread ID: " + thread_id_to_string(std::this_thread::get_id()) + " Generated entry " + std::to_string(i) + ": " +
-                 entry["key"] + " -> " + entry["value"]);
     }
 
-    std::sort(data.begin(), data.end(), [](const auto &a, const auto &b)
-              { return a.at("key") < b.at("key"); });
+    std::sort(data.begin(), data.end(), ComparePair());
 
     if (data.empty())
     {

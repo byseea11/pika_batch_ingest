@@ -6,16 +6,14 @@
 #include "utils/result.h"
 #include "utils/klog.h"
 #include <vector>
-#include <unordered_map>
 #include <mutex>
 #include <nlohmann/json.hpp>
+#include "utils/kvEntry.h"
 using json = nlohmann::json;
 
 #ifndef PROJECT_DIR
 #else
 #endif
-
-using DataType = std::vector<std::unordered_map<std::string, std::string>>;
 
 static const std::filesystem::path DEFAULTDIC = std::filesystem::path(PROJECT_DIR) / "data";
 

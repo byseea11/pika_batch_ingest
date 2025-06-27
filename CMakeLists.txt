@@ -27,6 +27,7 @@ set(WITH_GTEST OFF CACHE BOOL "Disable RocksDB internal gtest" FORCE)
 set(WITH_BENCHMARK_TOOLS OFF CACHE BOOL "Disable benchmark tools" FORCE)
 set(WITH_TOOLS OFF CACHE BOOL "Disable RocksDB tools" FORCE)
 set(ROCKSDB_BUILD_TESTS OFF CACHE BOOL "Disable building RocksDB tests" FORCE)
+add_definitions(-DROCKSDB_PLATFORM_POSIX) 
 
 # -----------------------------------------------------------------------------
 # 添加子模块依赖
@@ -55,6 +56,8 @@ target_link_libraries(test_bingest
     PRIVATE
     gmock_main
     nlohmann_json::nlohmann_json
+    pthread
+    z 
     rocksdb
 )
 target_compile_definitions(test_bingest PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}")
@@ -75,9 +78,12 @@ target_compile_definitions(mock PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}")
 set(EXCHANGE_SOURCES ${ALL_SOURCES})
 list(FILTER EXCHANGE_SOURCES EXCLUDE REGEX ".*/mock.cpp$")
 add_executable(exchange ${EXCHANGE_SOURCES})
+target_link_libraries(exchange PRIVATE rocksdb)
 target_link_libraries(exchange
     PRIVATE
     nlohmann_json::nlohmann_json
+    pthread
+    z
     rocksdb
 )
 target_compile_definitions(exchange PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}")
@@ -88,6 +94,9 @@ if(CMAKE_COMPILER_IS_GNUCXX AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS "9")
     target_link_libraries(mock PRIVATE stdc++fs)
     target_link_libraries(exchange PRIVATE stdc++fs)
 endif()
+
+
+
 
 # -----------------------------------------------------------------------------
 # 启用 CTest 测试框架

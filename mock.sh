@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 默认参数值
-DEFAULT_SIZE="100M"
+DEFAULT_SIZE="10M"
 DEFAULT_DICT="kvdict"
 
 # 解析命令行参数
@@ -31,4 +31,4 @@ dict=${dict:-$DEFAULT_DICT}
 # 执行构建和运行命令
 ./build.sh
 cd build
-./bingest -n "$size" -d "$dict"
+./mock -n "$size" -d "$dict"

@@ -10,6 +10,7 @@ public:
         kNone = 0,         // 默认状态
         kOk,               // 成功
         kFileCreated,      // 文件创建成功
+        kFileReadError,    // 文件读取错误
         kDataGenerated,    // 数据成功生成
         kError,            // 一般错误
         kFileOpenError,    // 文件打开错误
@@ -57,6 +58,11 @@ public:
             result = "-ERR Unable to open file for '";
             result.append(message_);
             result.append("'\r\n");
+        case kFileReadError:
+            result = "-ERR Error reading file for '";
+            result.append(message_);
+            result.append("'\r\n");
+            return result;
         case kInvalidSize:
             result = "-ERR Invalid size parameter for '";
             result.append(message_);

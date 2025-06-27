@@ -4,6 +4,7 @@
 #include <filesystem>
 #include "gmock/gmock.h"
 #include "mock/fileManager.h"
+#include "utils/kvEntry.h"
 
 // 创建一个 MockFileManager 类，继承自 FileManagerBase
 class MockFileManager : public FileManagerBase
@@ -86,9 +87,12 @@ TEST_F(DataGenTest, GenerateFileShouldGenerateCorrectNumberOfEntriesAndSorted)
         .WillOnce([](const DataType &data)
                   {
             EXPECT_FALSE(data.empty());
-            for (size_t i = 1; i < data.size(); ++i) {
-                EXPECT_LE(data[i - 1].at("key"), data[i].at("key"));
+            EXPECT_EQ(data.size(), 100);
+            for (size_t i = 1; i < data.size(); ++i)
+            {
+                EXPECT_LE(data[i - 1].key, data[i].key); // 按 key 排序
             }
+
             return Result(Result::Ret::kOk, "File generated successfully."); });
 
     gen->generateFile(100);

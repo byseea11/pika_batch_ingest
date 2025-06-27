@@ -2,6 +2,7 @@
 #include <fstream>
 #include <nlohmann/json.hpp>
 #include "exchange/JsonFileManager.h"
+#include "utils/kvEntry.h" // 如果 KvEntry 定义在这个头文件中
 
 using json = nlohmann::json;
 
@@ -12,31 +13,33 @@ protected:
 
     void SetUp() override
     {
-        json data = json::array({{{"key", "key_999"}, {"value", "value_942"}},
-                                 {{"key", "key_999"}, {"value", "value_975"}},
-                                 {{"key", "key_999"}, {"value", "value_895"}}});
+        json data = json::array({{{"key", "key_1"}, {"value", "value_abc"}, {"expire", 1719820385}},
+                                 {{"key", "key_2"}, {"value", "value_def"}}});
 
         std::ofstream out(jsonFilePath);
         ASSERT_TRUE(out.is_open()) << "Failed to create test_data.json";
-        out << data.dump(4); // 格式化写入，4空格缩进
+        out << data.dump(4);
         out.close();
     }
 
     void TearDown() override
     {
-        std::remove(jsonFilePath.c_str()); // 清理测试文件
+        std::remove(jsonFilePath.c_str());
     }
 };
 
-TEST_F(ExchangeTest, LoadJsonArrayFromFile)
+TEST_F(ExchangeTest, JsonFileManagerParseShouldSupportExpireField)
 {
     JsonFileManager manager;
-    json result = manager.load("test_data.json");
+    DataType result = manager.parse(jsonFilePath);
 
-    ASSERT_TRUE(result.is_array());
-    ASSERT_EQ(result.size(), 3);
+    ASSERT_EQ(result.size(), 2);
 
-    EXPECT_EQ(result[0]["key"], "key_999");
-    EXPECT_EQ(result[1]["value"], "value_975");
-    EXPECT_EQ(result[2]["value"], "value_895");
+    EXPECT_EQ(result[0].key, "key_1");
+    EXPECT_EQ(result[0].value, "value_abc");
+    EXPECT_EQ(result[0].timestamp, 1719820385);
+
+    EXPECT_EQ(result[1].key, "key_2");
+    EXPECT_EQ(result[1].value, "value_def");
+    EXPECT_EQ(result[1].timestamp, 0); // 默认值
 }

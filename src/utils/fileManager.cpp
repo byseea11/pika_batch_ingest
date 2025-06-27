@@ -16,7 +16,6 @@ Result FileManager::write(const DataType &data)
         return Result(Result::Ret::kFileOpenError, filePath_);
     }
 
-    // 自动将 vector<unordered_map<string, string>> 转为 json array of objects
     json j = data;
     file << j.dump(4); // 缩进为 4 空格，美化输出
     file.close();
