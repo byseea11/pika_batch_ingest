@@ -25,11 +25,11 @@ protected:
         // 创建测试配置文件
         std::ofstream config(configPath);
         config << R"({
-            "targetSizeGB": 1,
+            "targetSizeMB": 100,
             "maxSizeGB": 2,
             "keyPrefix": "key_",
             "valuePrefix": "val_",
-            "maxFileSizeMB": 256,
+            "maxFileSizeMB": 20,
             "approxEntrySizeKB": 50
         })";
         config.close();
@@ -107,11 +107,11 @@ TEST_F(DataGenTest, GenerateFileShouldNotCrashIfEntrySizeIsZero)
     std::string configPath = "test_zeroapp_config.json";
     std::ofstream config(configPath);
     config << R"({
-        "targetSizeGB": 1,
+        "targetSizeMB": 100,
         "maxSizeGB": 2,
         "keyPrefix": "key_",
         "valuePrefix": "val_",
-        "maxFileSizeMB": 1,
+        "maxFileSizeMB": 20,
         "approxEntrySizeKB": 0
     })";
     config.close();
@@ -154,11 +154,11 @@ TEST_F(DataGenTest, GenerateDataSplitFiles)
     std::string configPath = "test_split_config.json";
     std::ofstream config(configPath);
     config << R"({
-        "targetSizeGB": 0.001,
+        "targetSizeMB": 100,
         "maxSizeGB": 2,
         "keyPrefix": "key_",
         "valuePrefix": "val_",
-        "maxFileSizeMB": 0.1,
+        "maxFileSizeMB": 20,
         "approxEntrySizeKB": 50
     })";
     config.close();

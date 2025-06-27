@@ -30,7 +30,7 @@ public:
     // 构造函数，接受文件路径
     FileManager(const std::string &dic) : distname_index_(0)
     {
-        dic_ = std::filesystem::path(PROJECT_DIR) / dic; // 使用 PROJECT_DIR 和用户指定的目录拼接路径
+        dic_ = std::filesystem::path(PROJECT_DIR) / "data" / dic; // 使用 PROJECT_DIR 和用户指定的目录拼接路径
         // 检查目录是否存在，如果不存在则创建
         if (!std::filesystem::exists(dic_))
         {
@@ -43,6 +43,7 @@ public:
     Result getFileName()
     {
         std::lock_guard<std::mutex> lock(mutex_);
+        LOG_INFO(dic_ + " is the directory for data files.");
         filePath_ = dic_ + "/data_" + std::to_string(distname_index_++) + ".json"; // 更新当前文件路径
         LOG_INFO("FileManager Creating file: " + filePath_);
         return Result(Result::Ret::kFileCreated, filePath_);

@@ -9,75 +9,72 @@
 #include "utils/result.h"
 #include <nlohmann/json.hpp>
 #include <iomanip>
+
+#ifndef PROJECT_DIR
+#else
+#endif
 /**
  *  ./mock.sh -n 1G -d "kvdict"
  */
 
-static const std::string configFile = "uconfig.json";
+static const std::string configFile = std::filesystem::path(PROJECT_DIR) / "src/config.json";
 
 static json &getConfig()
 {
-    static json instance; // C++11保证线程安全的初始化
+    static json instance;
     return instance;
 }
 
 static void loadConfig(const std::string &filePath)
 {
-    std::ifstream file(filePath); // 避免变量名冲突
-    file >> getConfig();          // 通过函数访问静态变量
-}
-
-static json config = getConfig();
-
-double strToDouble(const std::string &s)
-{
-    std::istringstream iss(s);
-    double value;
-    iss >> value; // 自动处理科学计数法
-    if (iss.fail())
-        throw std::invalid_argument("Invalid number");
-    return value;
+    std::ifstream file(filePath);
+    if (!file)
+    {
+        throw std::runtime_error("Failed to open config file: " + filePath);
+    }
+    file >> getConfig(); // 把数据读入静态 json 对象
 }
 
 class MockCmd
 {
 public:
     std::string directory = "kvdict"; // 默认目录是 "kvdict"
-    std::string keyPrefix = "key_";
-    std::string valuePrefix = "value_";
-    double maxFileSizeMB = 10;
-    double maxSizeGB = 10;
-    double targetSizeGB = 0.01;
-    double approxEntrySizeKB = 50;
+    std::string keyPrefix;
+    std::string valuePrefix;
+    double maxFileSizeMB;
+    double maxSizeGB;
+    double targetSizeMB;
+    double approxEntrySizeKB;
 
     MockCmd()
     {
         // 加载配置文件
+        loadConfig(configFile);
         try
         {
-            if (config.contains("targetSizeGB"))
+            if (getConfig().contains("targetSizeMB"))
             {
-                targetSizeGB = config["targetSizeGB"].get<double>();
+                targetSizeMB = getConfig()["targetSizeMB"].get<double>();
             }
-            if (config.contains("keyPrefix"))
+            if (getConfig().contains("keyPrefix"))
             {
-                keyPrefix = config["keyPrefix"].get<std::string>();
+                keyPrefix = getConfig()["keyPrefix"].get<std::string>();
             }
-            if (config.contains("valuePrefix"))
+            if (getConfig().contains("valuePrefix"))
             {
-                valuePrefix = config["valuePrefix"].get<std::string>();
+                valuePrefix = getConfig()["valuePrefix"].get<std::string>();
             }
-            if (config.contains("maxFileSizeMB"))
+            if (getConfig().contains("maxFileSizeMB"))
             {
-                maxFileSizeMB = config["maxFileSizeMB"].get<double>();
+                maxFileSizeMB = getConfig()["maxFileSizeMB"].get<double>();
             }
-            if (config.contains("maxSizeGB"))
+            if (getConfig().contains("maxSizeGB"))
             {
-                maxSizeGB = config["maxSizeGB"].get<double>();
+                maxSizeGB = getConfig()["maxSizeGB"].get<double>();
             }
-            if (config.contains("approxEntrySizeKB"))
+            if (getConfig().contains("approxEntrySizeKB"))
             {
-                approxEntrySizeKB = config["approxEntrySizeKB"].get<double>();
+                approxEntrySizeKB = getConfig()["approxEntrySizeKB"].get<double>();
             }
         }
         catch (const std::exception &e)
@@ -94,7 +91,7 @@ public:
             switch (opt)
             {
             case 'n':
-                targetSizeGB = strToDouble(parseSize(optarg).message_raw()); // 解析 -n 后的值
+                targetSizeMB = stod(parseSize(optarg).message_raw()); // 解析 -n 后的值
                 break;
             case 'd':
                 directory = optarg; // 解析 -d 后的值
@@ -122,7 +119,7 @@ private:
 
         try
         {
-            size = strToDouble(str); // 将剩下的部分转换为数字
+            size = stod(str); // 将剩下的部分转换为数字
         }
         catch (const std::exception &e)
         {
@@ -133,11 +130,11 @@ private:
 
         if (unit == 'G')
         {
-            return Result(Result::kOk, std::to_string(size)); // 以 GB 为单位
+            return Result(Result::kOk, std::to_string(size * 1024)); // 以 GB 为单位
         }
         else if (unit == 'M')
         {
-            return Result(Result::kOk, std::to_string(size / 1024)); // 将 MB 转换为 GB
+            return Result(Result::kOk, std::to_string(size)); // 将 MB 转换为 GB
         }
         else
         {
@@ -156,8 +153,9 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    LOG_INFO("Target size: " + std::to_string(cmd.targetSizeGB) + "G");
+    LOG_INFO("Target size: " + std::to_string(cmd.targetSizeMB) + "G");
     LOG_INFO("Directory: " + cmd.directory);
+    LOG_INFO("Approximate entry size: " + std::to_string(cmd.approxEntrySizeKB) + "KB");
 
     try
     {
@@ -173,7 +171,7 @@ int main(int argc, char **argv)
             {"valuePrefix", cmd.valuePrefix},
             {"maxFileSizeMB", cmd.maxFileSizeMB},
             {"maxSizeGB", cmd.maxSizeGB},
-            {"targetSizeGB", cmd.targetSizeGB},
+            {"targetSizeMB", cmd.targetSizeMB},
             {"approxEntrySizeKB", cmd.approxEntrySizeKB}};
 
         ofs << config.dump(4); // 格式化输出

@@ -42,9 +42,9 @@ Result DataGen::loadConfig(const std::string &configFilePath)
 {
     std::ifstream configFile(configFilePath);
     configFile >> config_;
-    targetSizeGB_ = config_["targetSizeGB"];
-    maxSizeGB_ = config_["maxSizeGB"];
-    if (targetSizeGB_ > maxSizeGB_)
+    targetSizeMB_ = config_["targetSizeMB"];
+    maxSizeMB_ = config_["maxSizeGB"].get<double>() * 1024;
+    if (targetSizeMB_ > maxSizeMB_)
     {
         LOG_ERROR("Target size cannot be greater than maximum size.");
         return Result(Result::Ret::kConfigError, "Target size cannot be greater than maximum size.");
@@ -70,10 +70,10 @@ Result DataGen::loadConfig(const std::string &configFilePath)
 Result DataGen::generateData()
 {
     // 使用浮点数，添加范围检查
-    double totalDataSize = targetSizeGB_ * 1024;
+    double totalDataSize = targetSizeMB_;
     double totalFiles = (maxFileSizeMB_ > 0) ? totalDataSize / maxFileSizeMB_ : 0.0;
     double remainder = (maxFileSizeMB_ > 0) ? std::fmod(totalDataSize, maxFileSizeMB_) : 0.0;
-    double perFileDataSize = maxFileSizeMB_; // 每个文件的大小（KB）
+    double perFileDataSize = maxFileSizeMB_; // 每个文件的大小（MB）
 
     LOG_INFO("Total data size: " + std::to_string(totalDataSize) +
              " MB, Total files to generate: " + std::to_string(totalFiles) +
@@ -88,12 +88,12 @@ Result DataGen::generateData()
     for (size_t i = 1; i < totalFiles; ++i)
     {
         pool.enqueue([this, perFileDataSize]
-                     { this->generateFile(perFileDataSize * 1024); });
+                     { this->generateFile(perFileDataSize); });
     }
 
     // 最后一个线程处理 remainder
     pool.enqueue([this, perFileDataSize, remainder]
-                 { this->generateFile(perFileDataSize * 1024 + remainder * 1024); });
+                 { this->generateFile(perFileDataSize + remainder); });
 
     return Result(Result::Ret::kOk, "Data generation completed successfully.");
 }
@@ -104,7 +104,7 @@ Result DataGen::generateFile(size_t fileSize)
     DataType data;
     Result res;
 
-    size_t numEntries = fileSize / approxEntrySizeKB_; // 计算每个文件需要多少条数据
+    size_t numEntries = fileSize * 1024 / approxEntrySizeKB_; // 计算每个文件需要多少条数据
 
     // 为每个线程创建独立的随机生成器和分布器
     std::random_device rd;

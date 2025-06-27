@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 默认参数值
-DEFAULT_SIZE="0.01G"
+DEFAULT_SIZE="100M"
 DEFAULT_DICT="kvdict"
 
 # 解析命令行参数
