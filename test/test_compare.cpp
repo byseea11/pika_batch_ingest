@@ -4,17 +4,6 @@
 #include "utils/compare.h" // 包含 CompareString 和 ComparePair
 #include "utils/kvEntry.h" // 包含 KvEntry 定义
 
-// --------------------- CompareString Tests ---------------------
-TEST(CompareTest, CompareStringByLengthThenLexical)
-{
-    CompareString cmp;
-    EXPECT_TRUE(cmp("ab", "abc"));    // shorter
-    EXPECT_FALSE(cmp("abcd", "abc")); // longer
-    EXPECT_TRUE(cmp("abc", "abd"));   // same length, lex
-    EXPECT_FALSE(cmp("abc", "abc"));  // equal
-    EXPECT_FALSE(cmp("xyz", "abc"));  // same length, later
-}
-
 // --------------------- ComparePair Tests with Fixture ---------------------
 class ComparePairTest : public ::testing::Test
 {

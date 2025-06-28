@@ -6,14 +6,19 @@
 ## Todo List
 - [ ] 生成 SST 文件并实现主从复制
   - [x] 模拟数据，覆盖 String 类型
-  - [ ] 生成 SST 文件
+  - [x] 生成 SST 文件
+    - [ ] 需要实现多线程生成
+    - [ ] 需要实现自动扫描文件目录
+    - [ ] 需要实现生成的sst文件读取工具
   - [ ] 文件导入到Pika
   - [ ] 上传到共享存储并通知 Pika 服务端
   - [ ] 在 Pika 服务端实现主从复制
 - [ ] 自动化：实现自动化流程
   - [x] Mock自动化
+  - [x] Exchange自动化
 - [ ] 测试：编写相关测试，确保功能的正确性
   - [x] Mock单元测试
+  - [x] Exchange单元测试
 
 ## Usage
 
@@ -47,3 +52,18 @@ cd ../../output && ./pika_batch_ingest
 ```shell
  export LD_LIBRARY_PATH=/home/byseea/code/opensum/pika_batch_ingest/third/rocksdb:$LD_LIBRARY_PATH
  ```
+
+用于将模拟数据文件转化为sst文件。使用方式如下：
+
+```bash
+./exchange -k {kv} -s {sst}
+```
+示例（kv数据是放在kvdict文件夹下的data_1.json，生成的sst数据是放在sst文件夹下的data_1.sst）：
+```bash
+./exchange -k "kvdict/data_1.json" -s "sst/data_1.sst"
+```
+-k: 指定kv数据的文件；
+-s: 指定sst数据的文件；
+
+实现效果如下
+![alt text](images/sst.png)

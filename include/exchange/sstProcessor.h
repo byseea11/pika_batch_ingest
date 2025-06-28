@@ -9,7 +9,7 @@
 #include "rocksdb/status.h"
 #include "rocksdb/utilities/db_ttl.h"
 #include "utils/result.h"
-#include "exchange/JsonFileManager.h"
+#include "exchange/JsonFileManager.h" // 包含 JsonFileManagerBase
 
 class SstProcessor
 {
@@ -18,7 +18,10 @@ public:
     SstProcessor(const rocksdb::Options &opts, rocksdb::ColumnFamilyHandle *cfh = nullptr)
         : options_(opts), cfh_(cfh) {}
 
-    Result processSstFile(const std::string &inputJsonPath, const std::string &outputSstPath);
+    // 修改 processSstFile，允许注入 JsonFileManagerBase*
+    Result processSstFile(JsonFileManagerBase *fileManager,
+                          const std::string &inputJsonPath,
+                          const std::string &outputSstPath);
 
 private:
     rocksdb::Options options_;
@@ -26,3 +29,5 @@ private:
 };
 
 #endif // SST_PROCESSOR_H
+
+// 添加一个sst read的小工具

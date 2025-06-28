@@ -6,6 +6,12 @@
 #include <nlohmann/json.hpp>
 #include <random>
 
+#ifndef PROJECT_DIR
+#else
+#endif
+
+const std::filesystem::path DEFAULTDIC = std::filesystem::path(PROJECT_DIR) / "data";
+
 using json = nlohmann::json;
 
 struct KvEntry

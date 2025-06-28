@@ -5,7 +5,20 @@
 #include "utils/kvEntry.h"
 using json = nlohmann::json;
 
-class JsonFileManager
+// 使用虚拟函数来支持 Mock
+class JsonFileManagerBase
+{
+public:
+    virtual ~JsonFileManagerBase() = default;
+
+    // 解析 JSON 文件的纯虚函数
+    virtual DataType parse(const std::string &jsonStr) = 0; // 改为虚函数
+
+protected:
+    JsonFileManagerBase() = default;
+};
+
+class JsonFileManager : public JsonFileManagerBase
 {
 public:
     DataType parse(const std::string &filePath)

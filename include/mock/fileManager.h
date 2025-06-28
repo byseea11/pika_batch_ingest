@@ -11,12 +11,6 @@
 #include "utils/kvEntry.h"
 using json = nlohmann::json;
 
-#ifndef PROJECT_DIR
-#else
-#endif
-
-static const std::filesystem::path DEFAULTDIC = std::filesystem::path(PROJECT_DIR) / "data";
-
 // 创建一个模拟的 FileManager 基类，用于测试
 class FileManagerBase
 {
