@@ -41,3 +41,9 @@ cd ../../output && ./pika_batch_ingest
 ![alt text](images/mock.png)
 
 ### exchange
+
+注意使用的rocksdb是动态库，需要添加一下动态库的系统变量
+
+```shell
+ export LD_LIBRARY_PATH=/home/byseea/code/opensum/pika_batch_ingest/third/rocksdb:$LD_LIBRARY_PATH
+ ```

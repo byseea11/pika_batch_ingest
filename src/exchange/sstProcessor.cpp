@@ -1,6 +1,7 @@
 #include "exchange/sstProcessor.h"
 #include "exchange/JsonFileManager.h"
 #include "utils/result.h"
+#include "utils/klog.h"
 #include <iostream>
 
 Result SstProcessor::processSstFile(const std::string &inputJsonPath, const std::string &outputSstPath)
@@ -16,7 +17,7 @@ Result SstProcessor::processSstFile(const std::string &inputJsonPath, const std:
     {
         return Result(Result::Ret::kFileReadError, std::string("JSON parse failed: ") + e.what());
     }
-
+    std::cout << &options_ << " " << &cfh_ << std::endl;
     rocksdb::SstFileWriter writer(rocksdb::EnvOptions(), options_, cfh_);
 
     auto status = writer.Open(outputSstPath);
