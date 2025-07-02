@@ -1,7 +1,52 @@
 # pika_batch_ingest
 
 ## Introduction
-场景：一个用户有 30GB 的数据需要写入 Pika。之前只能通过 Redis 命令逐条写入（如 `SET key value`）。通过这个项目，客户端可以先根据规则将这 30GB 数据生成 SST 文件，然后将这些文件注入到 Pika 的 RocksDB 中。对于模拟数据，暂时只需要覆盖 **String** 类型即可。
+### Mock + SST
+用于高效生成大规模、可配置的 Key-Value 数据，支持多线程、文件大小拆分、重复数据比例控制，并以 JSON 格式输出 SST 文件，用于 RocksDB / Pika 等后续 ingest。
+#### 方案概述
+1. 用户可指定目标数据总大小（支持单位：B、K、M、G），支持生成高达 TB 级文件（本地磁盘允许范围内）。
+2. 支持多线程并发数据生成，提高数据生成速度。
+3. 自动拆分输出文件，每个文件最大大小可配置。
+4. 数据包含可控比例的重复 Key 模拟真实场景。
+
+#### 关键模块
+✅数据生成模块
+1. 随机或重复 Key-Value 数据生成（支持键值前缀、时间戳）。
+2. 用户可配置目标数据大小、条目平均大小、每文件最大大小。
+
+✅ 多线程文件生成器
+1. 基于线程池提交文件生成任务。
+2. 支持线程安全文件名分配。
+
+✅ 文件管理模块
+1. 按配置写入 JSON 格式文件。
+2. 自动生成唯一文件名，支持多线程环境。
+
+### S3 + ingest 主从同步方案设计
+基于 S3 实现 SST 文件 ingest，并在 Pika 集群内主从同步，保证数据一致性，简化架构部署。
+
+#### 方案概述
+1. 主节点完成 ingest 后，通过扩展 binlog 记录一条特殊的 INGEST_SST 操作日志，包含必要的 manifest 元信息（如 manifest 版本、SST 文件列表等）。
+2. 从节点在主从同步链路上接收到该 binlog 日志后，解析出 SST 文件信息，通过 S3 下载并按 manifest 指定顺序执行 ingest，保证数据一致性。
+3. 为简化调用和运维：
+   - 在 pika_kv 新增 INGEST_S3 命令接口，用于接收 ingest 指令并触发 ingest 逻辑。
+   - 开发一个 Python agent，轮询 S3，检测新 manifest 文件，并通过管理接口调用主节点的 INGEST_S3 命令驱动 ingest。
+
+#### 关键模块
+✅ Pika 控制层扩展
+1. 在 string 命令模块（如 pika_kv.h/cpp）添加新命令类（如 IngestS3Cmd）。
+2. 接收 ingest_s3 命令参数（manifest 版本、文件列表）。
+3. 调用 S3 拉取、RocksDB ingestExtend。
+4. 写入扩展 binlog 日志（记录 ingest 操作信息）。
+
+✅ 主从 binlog 链路扩展
+1. 在 binlog 写入模块中定义新 RecordType，支持记录 INGEST_SST。
+2. 主从同步链路传递 ingest 日志，从节点解析并执行。。
+
+✅ Python agent
+1. 定期轮询 S3，检测新 manifest 文件。
+2. 调用主节点管理口发起 ingest 命令。
+
 
 ## Todo List
 - [ ] 生成 SST 文件并实现主从复制
