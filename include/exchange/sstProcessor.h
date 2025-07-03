@@ -23,6 +23,10 @@ public:
                           const std::string &inputJsonPath,
                           const std::string &outputSstPath);
 
+    // 实现并发处理kv->sst:使用线程池  ThreadPool pool(numThreads_);多线程处理，读取input文件夹，每一个线程单独处理，可以使用processSstFile来处理，不过里面就需要加锁
+    Result mutiProcessSstFile(JsonFileManagerBase *fileManager, const std::string &inputDicPath,
+                              const std::string &outputDicPath);
+
 private:
     rocksdb::Options options_;
     rocksdb::ColumnFamilyHandle *cfh_; // 可以为 nullptr 表示 default CF
