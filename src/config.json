@@ -1,8 +1,0 @@
-{
-    "approxEntrySizeKB": 100.0,
-    "keyPrefix": "key_",
-    "maxFileSizeMB": 5.0,
-    "maxSizeGB": 10.0,
-    "targetSizeMB": 10.0,
-    "valuePrefix": "value_"
-}

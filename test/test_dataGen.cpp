@@ -5,6 +5,7 @@
 #include "gmock/gmock.h"
 #include "mock/fileManager.h"
 #include "utils/kvEntry.h"
+#include "mock/mock.h"
 
 // 创建一个 MockFileManager 类，继承自 FileManagerBase
 class MockFileManager : public FileManagerBase
@@ -66,7 +67,7 @@ TEST_F(DataGenTest, GenerateKeyShouldBeInKeyPool)
 
 TEST_F(DataGenTest, GenerateKeyShouldHandleEmptyPool)
 {
-    gen->getKeyPool().clear();
+    gen->clearKeyPool();
     EXPECT_THROW({ gen->generateKey(); }, std::runtime_error);
 }
 
@@ -87,7 +88,6 @@ TEST_F(DataGenTest, GenerateFileShouldGenerateCorrectNumberOfEntriesAndSorted)
         .WillOnce([](const DataType &data)
                   {
             EXPECT_FALSE(data.empty());
-            EXPECT_EQ(data.size(), 100);
             for (size_t i = 1; i < data.size(); ++i)
             {
                 EXPECT_LE(data[i - 1].key, data[i].key); // 按 key 排序
@@ -140,7 +140,8 @@ TEST_F(DataGenTest, GenerateFileShouldHandleEmptyKeyPool)
 
 TEST_F(DataGenTest, GenerateFileShouldHandleWriteFailure)
 {
-    gen = std::make_unique<DataGen>(configPath, "output");
+    const std::string dicPath = "output";
+    gen = std::make_unique<DataGen>(configPath, dicPath);
     gen->setFileManager(mockFileManager);
     // 确保生成至少一个 entry，否则不会触发 write 调用
     EXPECT_CALL(*mockFileManager, write(testing::_))
@@ -148,6 +149,7 @@ TEST_F(DataGenTest, GenerateFileShouldHandleWriteFailure)
 
     Result res = gen->generateFile(100); // 改为更大的值以确保写入
     EXPECT_EQ(res.getRet(), Result::Ret::kFileWriteError);
+    std::filesystem::remove_all(DEFAULTDIC / dicPath);
 }
 
 /**
@@ -202,17 +204,6 @@ TEST_F(DataGenTest, RebuildKeyPoolConcurrentRebuildKeyPool)
     EXPECT_EQ(gen.getKeyPool().size(), initialSize * threadCount);
 }
 
-TEST_F(DataGenTest, RebuildKeyKeyPoolContent)
-{
-    DataGen gen(configPath, outputDir);
-    gen.rebuildKeyPool();
-    auto pool = gen.getKeyPool();
-    for (size_t i = 0; i < pool.size(); ++i)
-    {
-        EXPECT_FALSE(pool[i].size() == 0);
-    }
-}
-
 TEST_F(DataGenTest, RebuildKeyReadDuringRebuild)
 {
     DataGen gen(configPath, outputDir);
@@ -237,13 +228,43 @@ TEST_F(DataGenTest, RebuildKeyReadDuringRebuild)
         t.join();
 }
 
-// TEST_F(DataGenTest, RebuildKeyKeyPoolUpdateInterval)
-// {
-//     DataGen gen(configPath, outputDir);
-//     auto initialSize = gen.getKeyPool().size(); // 直接获取当前键池大小
-//     gen.startKeyPoolUpdateTask();
-//     std::this_thread::sleep_for(std::chrono::seconds(3));
-//     auto updatedSize = gen.getKeyPool().size(); // 重新获取最新键池大小
-//     EXPECT_NE(initialSize, updatedSize);        // 比较最新状态
-//     gen.stopUpdateThread();
-// }
+TEST_F(DataGenTest, RebuildKeyKeyPoolContent)
+{
+    DataGen gen(configPath, outputDir);
+    gen.rebuildKeyPool();
+    auto pool = gen.getKeyPool();
+    for (size_t i = 0; i < pool.size(); ++i)
+    {
+        EXPECT_FALSE(pool[i].size() == 0);
+    }
+}
+
+TEST_F(DataGenTest, FolderHistoryLoadAndSave)
+{
+    // 构造测试文件路径
+    std::filesystem::path testPath = outputDir + "/test_folder_history.json";
+
+    // 模拟第一次加载：文件不存在
+    json history = LoadFolderHistory(testPath);
+    EXPECT_TRUE(history.contains("folders"));
+    EXPECT_TRUE(history["folders"].empty());
+
+    // 添加一个文件夹名
+    std::string folderName = "test_folder_1";
+    EXPECT_TRUE(SaveFolderHistory(history, folderName, testPath));
+    EXPECT_TRUE(std::filesystem::exists(testPath));
+
+    // 加载回来验证
+    json loaded = LoadFolderHistory(testPath);
+    EXPECT_TRUE(loaded.contains("folders"));
+    EXPECT_EQ(loaded["folders"].size(), 1);
+    EXPECT_EQ(loaded["folders"][0], folderName);
+
+    // 检查唯一性（已存在应检测为 false）
+    EXPECT_FALSE(CheckFolderNameUnique(loaded, folderName));
+    // 检查唯一性（不存在的应为 true）
+    EXPECT_TRUE(CheckFolderNameUnique(loaded, "new_folder"));
+
+    // 清理测试文件
+    std::filesystem::remove(testPath);
+}

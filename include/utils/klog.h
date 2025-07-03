@@ -13,7 +13,8 @@ class KLogger
 public:
     enum KLogLevel
     {
-        Info = 0,
+        Debug = 0,
+        Info,
         Warning,
         Error
     };
@@ -32,6 +33,11 @@ public:
         std::lock_guard<std::mutex> lock(mutex_);
         switch (level_)
         {
+#ifdef DEBUG
+        case Debug:
+            std::cout << "[DEBUG] " << message_ << std::endl;
+            break;
+#endif
         case Info:
             std::cout << "[INFO] " << message_ << std::endl;
             break;
@@ -56,6 +62,11 @@ public:
 
             switch (level_)
             {
+#ifdef DEBUG
+            case Debug:
+                logFile << "[DEBUG] ";
+                break;
+#endif
             case Info:
                 logFile << "[INFO] ";
                 break;
@@ -67,7 +78,6 @@ public:
                 break;
             }
             logFile << message_ << std::endl;
-            logFile.close();
         }
     }
 
@@ -84,6 +94,7 @@ inline KLogger klogger;
     klogger.logMessage();                                \
     klogger.logToFile("KLog.txt")
 
+#define LOG_DEBUG(content) KLOG(Debug, content)
 #define LOG_INFO(content) KLOG(Info, content)
 #define LOG_WARN(content) KLOG(Warning, content)
 #define LOG_ERROR(content) KLOG(Error, content)

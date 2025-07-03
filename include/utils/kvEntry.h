@@ -5,12 +5,7 @@
 #include <vector>
 #include <nlohmann/json.hpp>
 #include <random>
-
-#ifndef PROJECT_DIR
-#else
-#endif
-
-const std::filesystem::path DEFAULTDIC = std::filesystem::path(PROJECT_DIR) / "data";
+#include "utils/kconfig.h"
 
 using json = nlohmann::json;
 

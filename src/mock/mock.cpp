@@ -9,15 +9,14 @@
 #include "utils/result.h"
 #include <nlohmann/json.hpp>
 #include <iomanip>
+#include <fstream>
+#include "mock/mock.h"
 
-#ifndef PROJECT_DIR
-#else
-#endif
 /**
  *  ./mock.sh -n 1G -d "kvdict"
  */
-
-static const std::string configFile = std::filesystem::path(PROJECT_DIR) / "src/config.json";
+using json = nlohmann::json;
+static const std::string configFile = std::filesystem::path(PROJECT_DIR) / "config.json";
 
 static json &getConfig()
 {
@@ -30,6 +29,7 @@ static void loadConfig(const std::string &filePath)
     std::ifstream file(filePath);
     if (!file)
     {
+        LOG_ERROR("Failed to open config file: " + filePath);
         throw std::runtime_error("Failed to open config file: " + filePath);
     }
     file >> getConfig(); // 把数据读入静态 json 对象
@@ -48,10 +48,10 @@ public:
 
     MockCmd()
     {
-        // 加载配置文件
-        loadConfig(configFile);
         try
         {
+            // 加载配置文件
+            loadConfig(configFile);
             if (getConfig().contains("targetSizeMB"))
             {
                 targetSizeMB = getConfig()["targetSizeMB"].get<double>();
@@ -97,8 +97,8 @@ public:
                 directory = optarg; // 解析 -d 后的值
                 break;
             default:
-                std::cout << "Usage: ./mock -n <size> -d <directory>\n";
-                std::cout << "Example: ./mock -n 1G -d kvdict\n";
+                LOG_INFO("Usage: ./mock -n <size> -d <directory>");
+                LOG_INFO("Example: ./mock -n 1G -d kvdict");
                 return Result(Result::kError, "Invalid option");
             }
         }
@@ -111,7 +111,7 @@ private:
     {
         size_t size = 0;
         std::string str(sizeStr);
-        LOG_INFO("Parsing target size: " + str);
+        LOG_DEBUG("Parsing target size: " + str);
         char unit = str.back(); // 获取最后的单位字符（G 或 M）
 
         // 去掉最后的字符（单位）
@@ -126,15 +126,15 @@ private:
             return Result(Result::kError, "Invalid size format: " + std::string(sizeStr));
         }
 
-        LOG_INFO("Parsed size: " + std::to_string(size) + " with unit: " + unit);
+        LOG_DEBUG("Parsed size: " + std::to_string(size) + " with unit: " + unit);
 
         if (unit == 'G')
         {
-            return Result(Result::kOk, std::to_string(size * 1024)); // 以 GB 为单位
+            return Result(Result::kOk, std::to_string(size * 1024)); // 转成 MB
         }
         else if (unit == 'M')
         {
-            return Result(Result::kOk, std::to_string(size)); // 将 MB 转换为 GB
+            return Result(Result::kOk, std::to_string(size));
         }
         else
         {
@@ -153,9 +153,28 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    LOG_INFO("Target size: " + std::to_string(cmd.targetSizeMB) + "G");
-    LOG_INFO("Directory: " + cmd.directory);
-    LOG_INFO("Approximate entry size: " + std::to_string(cmd.approxEntrySizeKB) + "KB");
+    LOG_DEBUG("Target size: " + std::to_string(cmd.targetSizeMB) + "MB");
+    LOG_DEBUG("Directory: " + cmd.directory);
+    LOG_DEBUG("Approximate entry size: " + std::to_string(cmd.approxEntrySizeKB) + "KB");
+
+    // 检查目录是否存在
+    json folderHistory = LoadFolderHistory();
+    LOG_DEBUG("Loaded folder history: " + folderHistory.dump());
+
+    if (!CheckFolderNameUnique(folderHistory, cmd.directory))
+    {
+        LOG_ERROR("Folder name conflict detected: " + cmd.directory);
+        return -1;
+    }
+    LOG_DEBUG("Folder name is unique: " + cmd.directory);
+
+    if (!SaveFolderHistory(folderHistory, cmd.directory))
+    {
+        LOG_ERROR("Failed to save folder history.");
+        return -1;
+    }
+
+    LOG_DEBUG("Folder history saved successfully.");
 
     try
     {
@@ -182,11 +201,11 @@ int main(int argc, char **argv)
             LOG_ERROR("Write failed");
             return -1;
         }
-        LOG_INFO("Wrote config to " + configFile);
+        LOG_DEBUG("Wrote config to " + configFile);
 
         // 构造并启动数据生成器
         DataGen generator(configFile, cmd.directory);
-        LOG_INFO("Starting data generation...");
+        LOG_DEBUG("Starting data generation...");
         generator.generateData();
     }
     catch (const std::exception &e)

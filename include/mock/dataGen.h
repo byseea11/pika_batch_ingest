@@ -37,9 +37,8 @@ public:
     // 随机从键池中选择一个键
     Result generateKey();
 
-    // 动态扩展键池
-    Result ensureKeyPoolNotEmpty();
-    Result expandKeyPool();
+    // 清空键池
+    Result clearKeyPool();
 
     // 初始化键池
     Result initializeKeyPool();
@@ -50,7 +49,7 @@ public:
     // Result stopUpdateThread();
 
     // 获取当前键池用于测试
-    std::vector<std::string> &getKeyPool();
+    std::vector<std::string> getKeyPool();
     size_t getNumThreads() const { return numThreads_; }
     void setFileManager(const std::shared_ptr<FileManagerBase> &fileManager) { fileManager_ = std::move(fileManager); }
 

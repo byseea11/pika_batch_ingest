@@ -64,10 +64,6 @@ Result DataGen::loadConfig(const std::string &configFilePath)
 }
 
 // 生成数据的主函数
-/**
- * 1. 分割需要多少个文件，然后多线程处理每个文件
- * 2. 每个文件中的逻辑就是使用vector插入数据，最后sort，然后调用file.write写入文件
- */
 Result DataGen::generateData()
 {
     // 使用浮点数，添加范围检查
@@ -76,14 +72,14 @@ Result DataGen::generateData()
     double remainder = (maxFileSizeMB_ > 0) ? std::fmod(totalDataSize, maxFileSizeMB_) : 0.0;
     double perFileDataSize = maxFileSizeMB_; // 每个文件的大小（MB）
 
-    LOG_INFO("Total data size: " + std::to_string(totalDataSize) +
-             " MB, Total files to generate: " + std::to_string(totalFiles) +
-             ", Remainder: " + std::to_string(remainder) + " MB.");
+    LOG_DEBUG("Total data size: " + std::to_string(totalDataSize) +
+              " MB, Total files to generate: " + std::to_string(totalFiles) +
+              ", Remainder: " + std::to_string(remainder) + " MB.");
 
     // 创建线程池
     ThreadPool pool(numThreads_);
 
-    LOG_INFO("numThreads: " + std::to_string(numThreads_));
+    LOG_DEBUG("numThreads: " + std::to_string(numThreads_));
 
     // 提交文件生成任务到线程池
     for (size_t i = 1; i < totalFiles; ++i)
@@ -158,60 +154,45 @@ Result DataGen::generateKey()
 
     std::mt19937 gen(std::random_device{}());
     std::uniform_int_distribution<size_t> dist(0, keyPool_.size() - 1);
-    LOG_INFO("Thread ID: " + thread_id_to_string(std::this_thread::get_id()) + " Generating key from pool of size: " + std::to_string(keyPool_.size()));
+    LOG_DEBUG("Thread ID: " + thread_id_to_string(std::this_thread::get_id()) + " Generating key from pool of size: " + std::to_string(keyPool_.size()));
     return Result(Result::Ret::kOk, keyPool_[dist(gen)]);
 }
 
 Result DataGen::initializeKeyPool()
 {
     std::unique_lock<std::shared_mutex> lock(poolMutex_);
-    keyPool_.clear();
+    clearKeyPool();
     for (int i = 0; i < keyPoolSize_; ++i)
     {
         keyPool_.push_back(keyPrefix_ + std::to_string(i));
     }
-    LOG_INFO("Key pool initialized with size: " + std::to_string(keyPool_.size()));
+    LOG_DEBUG("Key pool initialized with size: " + std::to_string(keyPool_.size()));
     return Result(Result::Ret::kOk, "Key pool initialized successfully.");
 }
 Result DataGen::rebuildKeyPool()
 {
-    std::vector<std::string> newPool; // 临时容器
+    std::vector<std::string> newPool;
     for (size_t i = 0; i < numThreads_ * keyPoolSize_; ++i)
     {
         newPool.push_back(keyPrefix_ + std::to_string(i));
     }
     {
         std::unique_lock<std::shared_mutex> lock(poolMutex_);
-        keyPool_.swap(newPool); // 原子替换
+        keyPool_.swap(newPool);
     }
-    LOG_INFO("Key pool rebuilt with size: " + std::to_string(keyPool_.size()));
+    LOG_DEBUG("Key pool rebuilt with size: " + std::to_string(keyPool_.size()));
     return Result::kOk;
 }
 
-// Result DataGen::startKeyPoolUpdateTask()
-// {
-//     updateThread_ = std::thread([this]()
-//                                 {
-//         while (!stopUpdateThread_) {
-//             std::this_thread::sleep_for(poolUpdateInterval_);
-//             rebuildKeyPool();
-//         } });
-//     return Result(Result::Ret::kOk, "Key pool update task started successfully.");
-// }
-
-// Result DataGen::stopUpdateThread()
-// {
-//     stopUpdateThread_ = true;
-//     if (updateThread_.joinable())
-//     {
-//         updateThread_.join(); // 等待线程安全退出
-//     }
-//     return Result(Result::Ret::kOk, "Key pool update task stopped successfully.");
-// }
-
-std::vector<std::string> &
-DataGen::getKeyPool()
+std::vector<std::string> DataGen::getKeyPool()
 {
     std::shared_lock<std::shared_mutex> lock(poolMutex_);
-    return keyPool_;
+    return keyPool_; // 拷贝出去
+}
+
+Result DataGen::clearKeyPool()
+{
+    keyPool_.clear();
+    LOG_DEBUG("Key pool cleared.");
+    return Result(Result::Ret::kOk, "Key pool cleared successfully.");
 }

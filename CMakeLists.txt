@@ -9,6 +9,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # 包含头文件路径
 include_directories(${CMAKE_SOURCE_DIR}/include test third/ThreadPool)
 
+# 设置编译选项
+add_definitions(-DDEBUG)
+
 # ----------------------------------------------------------------------------- 
 # Fetch nlohmann/json (Header-only)
 include(FetchContent)
@@ -61,7 +64,10 @@ list(FILTER TESTABLE_SOURCES EXCLUDE REGEX ${EXCLUDE_REGEX})
 add_executable(test_bingest ${TEST_SOURCES} ${TESTABLE_SOURCES})
 # 链接 RocksDB 动态库
 target_link_libraries(test_bingest PRIVATE ${ROCKSDB_LIBRARY} gmock_main nlohmann_json::nlohmann_json pthread z)
-target_compile_definitions(test_bingest PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}")
+target_compile_definitions(test_bingest PRIVATE
+    PROJECT_DIR="${CMAKE_SOURCE_DIR}/data/test"
+    TESTING=1
+)
 
 # ----------------------------------------------------------------------------- 
 # Mock 可执行文件（排除 exchange）
@@ -69,7 +75,7 @@ set(MOCK_SOURCES ${ALL_SOURCES})
 list(FILTER MOCK_SOURCES EXCLUDE REGEX ".*/exchange.cpp$")
 add_executable(mock ${MOCK_SOURCES})
 target_link_libraries(mock PRIVATE ${ROCKSDB_LIBRARY} nlohmann_json::nlohmann_json)
-target_compile_definitions(mock PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}")
+target_compile_definitions(mock PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}/data")
 
 # ----------------------------------------------------------------------------- 
 # Exchange 可执行文件（排除 mock）
@@ -78,7 +84,7 @@ list(FILTER EXCHANGE_SOURCES EXCLUDE REGEX ".*/mock.cpp$")
 add_executable(exchange ${EXCHANGE_SOURCES})
 # 链接 RocksDB 动态库
 target_link_libraries(exchange PRIVATE ${ROCKSDB_LIBRARY} nlohmann_json::nlohmann_json pthread z)
-target_compile_definitions(exchange PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}")
+target_compile_definitions(exchange PRIVATE PROJECT_DIR="${CMAKE_SOURCE_DIR}/data")
 
 # ----------------------------------------------------------------------------- 
 # 若 GCC 版本 < 9，手动链接 stdc++fs
